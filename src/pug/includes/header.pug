@@ -1,1 +1,259 @@
-p Шапка
+.header
+    .header__column
+        .logo 
+            .logo__img 
+                img(src="img/logo.png" alt="Большие пироги")
+            .logo__article Осетинские пироги
+
+    .header__column
+        .header__top 
+            .address
+                img(src="img/map-icon.png" alt="Москва, 1-й Смоленский переулок, 22/10" width="30" height="30")
+                span Москва, 1-й Смоленский переулок, 22/10
+
+            ul.navigate
+                li
+                    a(href="#") О компании
+                li
+                    a(href="#") Доставка
+                li
+                    a(href="#") Оплата
+                li
+                    a(href="#") Акции 
+                li
+                    a(href="#") Цены 
+                li
+                    a(href="#") Контакты
+
+        .header__bottom 
+            .select-block 
+                .select._metro
+                    select 
+                        option Выберите метро
+                        option Тест
+
+                .select._okrug
+                    select 
+                        option Выберите округ
+                        option Тест
+
+                .select._district
+                    select 
+                        option Выберите район
+                        option Тест
+
+            .yandex-block 
+                .yandex-block__img 
+                    img(src="img/yandex-logo.png" alt="Яндекс")
+                .stars 
+                    ul.stars__list
+                        li 
+                            img(src="img/star.png")
+                        li
+                            img(src="img/star.png")
+                        li 
+                            img(src="img/star.png")
+                        li 
+                            img(src="img/star.png")
+                        li 
+                            img(src="img/star-half.png")
+
+                    .stars__rayting 4,5   
+
+                ul.basket-block 
+                    li
+                        .basket 
+                            img(src="img/cart.png" alt="Корзина" width="40" height="40")
+                            span.basket__count 8
+                    li
+                        .basket-price 2400 Р 
+                    li 
+                        a(href="#").basket-link Корзина 
+
+    .header__column
+        ul.contact-info
+            li
+                span Единая служба доставки 
+            li 
+                a(href="tel:74993430892").phone 
+                    span +7 (499) 343-08-92
+            li
+                .worktime 
+                    img(src="img/fast-time.png" alt="Рабочее время" width="50" height="50")
+                    .worktime__article Звоните ежедневно <br> с 9:00 до 21:00
+
+.header-sticky
+    .logo 
+        .logo__img 
+            img(src="img/logo.png" alt="Большие пироги")
+        .logo__article Осетинские пироги
+
+    .address
+        img(src="img/map-icon.png" alt="Москва, 1-й Смоленский переулок, 22/10" width="30" height="30")
+        span Москва, 1-й Смоленский переулок, 22/10
+
+    ul.navigate
+        li
+            a(href="#") О компании
+        li
+            a(href="#") Доставка
+        li
+            a(href="#") Оплата
+        li
+            a(href="#") Акции 
+        li
+            a(href="#") Цены 
+        li
+            a(href="#") Контакты
+
+    a(href="tel:74993430892").phone._icon
+        img(src="img/phone.png")
+        span +7 (499) 343-08-92
+
+    ul.basket-block 
+        li 
+            a(href="#").basket-link Корзина 
+        li
+            .basket 
+                img(src="img/cart.png" alt="Корзина" width="40" height="40")
+                span.basket__count 8
+        li
+            .basket-price 2400 Р 
+
+.header-mob
+    .burger 
+    a(href="tel:74993430892").phone +7 (499) 343-08-92
+    .basket 
+        img(src="img/cart.png" alt="Корзина" width="40" height="40")
+        span.basket__count 8
+
+.dropdownmenu
+    .address
+        img(src="img/map-icon.png" alt="Москва, 1-й Смоленский переулок, 22/10" width="30" height="30")
+        span Москва, 1-й Смоленский переулок, 22/10
+
+    .dropdownmenu__columns 
+        ul.navigate
+            li
+                a(href="#") О компании
+            li
+                a(href="#") Доставка
+            li
+                a(href="#") Оплата
+            li
+                a(href="#") Акции 
+            li
+                a(href="#") Цены 
+            li
+                a(href="#") Контакты
+
+        .dropdownmenu__products 
+            .products-block
+                .products-block__title
+                    img(src="img/m-1.png" alt="Сытные" width="20" height="20")
+                    a(href="#").products-block__link Сытные
+
+                ul.product-list
+                    li 
+                        img(src="img/meat-icon.png" alt="Сытные" width="20" height="20")
+                        a(href="#") С мясом 
+                    li 
+                        img(src="img/chicken-icon.png" alt="Сытные" width="20" height="20")
+                        a(href="#") С курицей
+                    li 
+                        img(src="img/turkey-icon.png" alt="Сытные" width="20" height="20")
+                        a(href="#") С индейкой 
+                    li 
+                        img(src="img/fish-icon.png" alt="Сытные" width="20" height="20")
+                        a(href="#") С рыбой
+
+            .products-block
+                .products-block__title
+                    img(src="img/m-2.png" alt="Сытные" width="20" height="20")
+                    a(href="#").products-block__link Постные
+
+                ul.product-list
+                    li 
+                        img(src="img/kabachok-icon.png" alt="Сытные" width="20" height="20")
+                        a(href="#") С кабачком
+                    li 
+                        img(src="img/cap-icon.png" alt="Сытные" width="20" height="20")
+                        a(href="#") С капустой
+                    li 
+                        img(src="img/plant-icon.png" alt="Сытные" width="20" height="20")
+                        a(href="#") С зеленью
+                    li 
+                        img(src="img/potato-icon.png" alt="Сытные" width="20" height="20")
+                        a(href="#") С картошкой
+
+            .products-block
+                .products-block__title
+                    img(src="img/m-3.png" alt="Сытные" width="20" height="20")
+                    a(href="#").products-block__link Сладкие
+
+                ul.product-list
+                    li 
+                        img(src="img/cherry-icon.png" alt="Сытные" width="20" height="20")
+                        a(href="#") С вишней
+                    li 
+                        img(src="img/lemon-icon.png" alt="Сытные" width="20" height="20")
+                        a(href="#") С лимоном
+                    li 
+                        img(src="img/fruit-icon.png" alt="Сытные" width="20" height="20")
+                        a(href="#") С яблоком
+                    li 
+                        img(src="img/raspberry-icon.png" alt="Сытные" width="20" height="20")
+                        a(href="#") С ежевикой
+                    li 
+                        img(src="img/apelsin-icon.png" alt="Сытные" width="20" height="20")
+                        a(href="#") С апельсином
+
+            .products-block
+                .products-block__title
+                    img(src="img/m-4.png" alt="Сытные" width="20" height="20")
+                    a(href="#").products-block__link Веганские
+
+                ul.product-list
+                    li 
+                        img(src="img/kabachok-icon.png" alt="Сытные" width="20" height="20")
+                        a(href="#") С кабачком
+                    li 
+                        img(src="img/cap-icon.png" alt="Сытные" width="20" height="20")
+                        a(href="#") С капустой
+                    li 
+                        img(src="img/plant-icon.png" alt="Сытные" width="20" height="20")
+                        a(href="#") С зеленью
+                    li 
+                        img(src="img/potato-icon.png" alt="Сытные" width="20" height="20")
+                        a(href="#") С картошкой
+
+            .products-block
+                .products-block__title
+                    img(src="img/m-5.png" alt="Сытные" width="20" height="20")
+                    a(href="#").products-block__link Традиционные
+
+                ul.product-list
+                    li 
+                        img(src="img/meat-icon.png" alt="Сытные" width="20" height="20")
+                        a(href="#") С мясом 
+                    li 
+                        img(src="img/chicken-icon.png" alt="Сытные" width="20" height="20")
+                        a(href="#") С курицей
+                    li 
+                        img(src="img/turkey-icon.png" alt="Сытные" width="20" height="20")
+                        a(href="#") С индейкой 
+                    li 
+                        img(src="img/fish-icon.png" alt="Сытные" width="20" height="20")
+                        a(href="#") С рыбой
+
+        ul.contact-info
+            li
+                span Единая служба доставки 
+            li 
+                a(href="tel:74993430892").phone +7 (499) 343-08-92
+            li
+                .worktime 
+                    img(src="img/fast-time.png" alt="Рабочее время" width="50" height="50")
+                    .worktime__article Звоните ежедневно <br> с 9:00 до 21:00
+
+        a(href="#").dropdowmnemu__link Заказать пироги 
