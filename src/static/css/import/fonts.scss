@@ -1,0 +1,43 @@
+@font-face {
+    font-family: 'HelveticaNeueCyr';
+    src: url('../fonts/HelveticaNeueCyr-Light/HelveticaNeueCyr-Light.eot');
+    src: url('../fonts/HelveticaNeueCyr-Light/HelveticaNeueCyr-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/HelveticaNeueCyr-Light/HelveticaNeueCyr-Light.woff') format('woff'),
+        url('../fonts/HelveticaNeueCyr-Light/HelveticaNeueCyr-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'HelveticaNeueCyr';
+    src: url('../fonts/HelveticaNeueCyr-Medium/HelveticaNeueCyr-Medium.eot');
+    src: url('../fonts/HelveticaNeueCyr-Medium/HelveticaNeueCyr-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/HelveticaNeueCyr-Medium/HelveticaNeueCyr-Medium.woff') format('woff'),
+        url('../fonts/HelveticaNeueCyr-Medium/HelveticaNeueCyr-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GothamPro';
+    src: url('../fonts/GothamPro-Medium/GothamPro-Medium.eot');
+    src: url('../fonts/GothamPro-Medium/GothamPro-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/GothamPro-Medium/GothamPro-Medium.woff') format('woff'),
+        url('../fonts/GothamPro-Medium/GothamPro-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GothamPro';
+    src: url('../fonts/GothamPro-Bold/GothamPro-Bold.eot');
+    src: url('../fonts/GothamPro-Bold/GothamPro-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/GothamPro-Bold/GothamPro-Bold.woff') format('woff'),
+        url('../fonts/GothamPro-Bold/GothamPro-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
