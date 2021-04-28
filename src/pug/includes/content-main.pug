@@ -1,5 +1,8 @@
 +productSlider
 
+//- Чек бокс внутри label
+//- https://itchief.ru/examples/lab.php?topic=html-and-css&file=styling-checkbox-and-radio-3
+
 .banner-slider.swiper-container
     .swiper-wrapper
         .swiper-slide 
@@ -51,281 +54,527 @@
     .swiper-button-next
     .swiper-button-prev
 
-.conatiner 
+.prodblock.conatiner 
     h1.main-title Осетинские пироги с мясом
 
     ul.products 
-        li 
-            .products__img 
-                img(src="img/pie-1.jpg")
+        +productLising
 
-            .products__title Осетинский пирог с мясом - «Фыдджин»
+.infoblock.container 
+    h2.main-title Осетинские пироги в москве с доставкой точно ко времени
+    .contenttxt
+        p Давно хотели отведать лучшие осетинские пироги в Москве? Мы предлагаем вам их недорого с бесплатной доставкой по городу. Чтобы заказать вкусные большие осетинские пироги, звоните нам!
 
-            ul.checklist
-                li 
-                    label(for="pr-1") 800 г
-                    input(type="radio" name="pr-1")#pr-1
-                    .checklist__price 650 руб.
-                li 
-                    label(for="pr-2") 1000 г
-                    input(type="radio" name="pr-1")#pr-2
-                    .checklist__price 700 руб.
-                li 
-                    label(for="pr-3") 1200 г
-                    input(type="radio" name="pr-1")#pr-3
-                    .checklist__price 750 руб.
-                li 
-                    label(for="pr-4") 1400 г
-                    input(type="radio" name="pr-1")#pr-4
-                    .checklist__price 820 руб.
+        p Осетинские пироги — это не только вкусное, но и символичное для осетинского народа блюдо, имеющее историю длиной во много веков. Домашняя выпечка с щедрой начинкой символизировала в Северной Осетии изобилие, материальное благополучие семьи и здоровье каждого ее члена. Традиционно на стол хозяйка выкладывала три пирога, один символизировал небо, второй — землю, а третий — подземное царство. В некоторых источниках осетинский пирог называют прообразом любимого блюда итальянцев – пиццы.
 
-            .products__bottom
-                .switch-price
-                    span.switch-minus -
-                    input(type="text" value="1" disabled="disabled").quantity 
-                    span.switch-plus +
+        p О старинных поверьях и традициях сегодня мало кто помнит, но вкусные большие пироги по старинным рецептам выпекаются по-прежнему. Они популярны благодаря красивой форме, насыщенному содержанию и универсальности — в будний день или праздник, на завтрак или ужин — они всегда кстати.
 
-                button(type="button").products__order
-                    img(src="img/cart.png" width="30" height="30")
-                    span В корзину
+        p Вариаций начинок большое множество, а это значит, что вы гарантированно сможете подобрать пирог по вкусу — с рыбой или мясом, с зеленью или капустой, с картофелем или тыквой. Неизменным в пироге остается вкуснейшее тесто. Для приготовления пирогов мы используем высококачественные продукты, свежие и экологически чистые. Заказы на выпечку принимаются ежедневно с 9 до 21 часа. При заказе от двух больших пирогов доставка по Москве бесплатная
 
-        li 
-            .products__img 
-                img(src="img/pie-2.jpg")
+.sliderblock.container
+    h2.main-title Осетинские пироги с капустой
 
-            .products__title Осетинский пирог с мясом - «Фыдджин»
+    .pie-slider.swiper-container
+        .swiper-wrapper
+            +pieSlides
+            +pieSlides
+            +pieSlides
+            +pieSlides
 
-            ul.checklist
-                li 
-                    label(for="pr-5") 800 г
-                    input(type="radio" name="pr-2")#pr-5
-                    .checklist__price 650 руб.
-                li 
-                    label(for="pr-6") 1000 г
-                    input(type="radio" name="pr-2")#pr-6
-                    .checklist__price 700 руб.
-                li 
-                    label(for="pr-7") 1200 г
-                    input(type="radio" name="pr-2")#pr-7
-                    .checklist__price 750 руб.
-                li 
-                    label(for="pr-8") 1400 г
-                    input(type="radio" name="pr-2")#pr-8
-                    .checklist__price 820 руб.
+        .swiper-pagination
 
-            .products__bottom
-                .switch-price
-                    span.switch-minus -
-                    input(type="text" value="1" disabled="disabled").quantity 
-                    span.switch-plus +
+        .swiper-button-next
+        .swiper-button-prev
 
-                button(type="button").products__order
-                    img(src="img/cart.png" width="30" height="30")
-                    span В корзину
+.advantageblock.container 
+    h2.main-title Преимущества      
 
-        li 
-            .products__img 
-                img(src="img/pie-3.jpg")
+    .adv-slider.swiper-container
+        .swiper-wrapper
+            .swiper-slide 
+                .adv-slider__item
+                    ul.adv-slider__top
+                        li
+                            .adv-slider__title Скорость доставки
+                            .adv-slider__article Минимальное время доставки в Москве
+                        li
+                            img(src="img/stopwatch.png" width="110" height="110")
 
-            .products__title Осетинский пирог с мясом - «Фыдджин»
+                    .adv-slider__bottom
+                        .adv-slider__info
+                            b 30
+                            span мин
 
-            ul.checklist
-                li 
-                    label(for="pr-9") 800 г
-                    input(type="radio" name="pr-3")#pr-9
-                    .checklist__price 650 руб.
-                li 
-                    label(for="pr-10") 1000 г
-                    input(type="radio" name="pr-3")#pr-10
-                    .checklist__price 700 руб.
-                li 
-                    label(for="pr-11") 1200 г
-                    input(type="radio" name="pr-3")#pr-11
-                    .checklist__price 750 руб.
-                li 
-                    label(for="pr-12") 1400 г
-                    input(type="radio" name="pr-3")#pr-12
-                    .checklist__price 820 руб.
+                    .adv-slider__img 
+                        img(src="img/pie-girl.png" width="219" height="174")
 
-            .products__bottom
-                .switch-price
-                    span.switch-minus -
-                    input(type="text" value="1" disabled="disabled").quantity 
-                    span.switch-plus +
+            .swiper-slide 
+                .adv-slider__item
+                    ul.adv-slider__top
+                        li
+                            .adv-slider__title Доставка в Москве
+                            .adv-slider__article Мы доставляем пироги по всей Москве и МО
+                        li
+                            img(src="img/kremlin.png" width="110" height="110")
 
-                button(type="button").products__order
-                    img(src="img/cart.png" width="30" height="30")
-                    span В корзину
+                    .adv-slider__bottom
+                        .select._metro
+                            select 
+                                option Выберите метро
+                                option Тест
 
-        li 
-            .products__img 
-                img(src="img/pie-4.jpg")
+            .swiper-slide 
+                .adv-slider__item
+                    ul.adv-slider__top
+                        li
+                            .adv-slider__title Качество продукции
+                            .adv-slider__article Используем только свежие продукты
+                        li
+                            img(src="img/food.png" width="110" height="110")
 
-            .products__title Осетинский пирог с мясом - «Фыдджин»
+                    .adv-slider__bottom
+                        .adv-slider__info
+                            b 25
+                            span начинок
 
-            ul.checklist
-                li 
-                    label(for="pr-13") 800 г
-                    input(type="radio" name="pr-4")#pr-13
-                    .checklist__price 650 руб.
-                li 
-                    label(for="pr-14") 1000 г
-                    input(type="radio" name="pr-4")#pr-14
-                    .checklist__price 700 руб.
-                li 
-                    label(for="pr-15") 1200 г
-                    input(type="radio" name="pr-4")#pr-15
-                    .checklist__price 750 руб.
-                li 
-                    label(for="pr-16") 1400 г
-                    input(type="radio" name="pr-4")#pr-16
-                    .checklist__price 820 руб.
+                    .adv-slider__img 
+                        img(src="img/vegetables.png" width="219" height="174")
 
-            .products__bottom
-                .switch-price
-                    span.switch-minus -
-                    input(type="text" value="1" disabled="disabled").quantity 
-                    span.switch-plus +
+            .swiper-slide 
+                .adv-slider__item
+                    ul.adv-slider__top
+                        li
+                            .adv-slider__title Удобная оплата
+                            .adv-slider__article Наличными курьеру, банковской картой + онлайн оплата на сайте
+                        li
+                            img(src="img/wallet.png" width="110" height="110")
 
-                button(type="button").products__order
-                    img(src="img/cart.png" width="30" height="30")
-                    span В корзину
+                    .adv-slider__bottom
+                        img(src="img/bank.png" width="300" height="28")
 
-        li 
-            .products__img 
-                img(src="img/pie-5.jpg")
+        .swiper-pagination
 
-            .products__title Осетинский пирог с мясом - «Фыдджин»
+        .swiper-button-next
+        .swiper-button-prev
 
-            ul.checklist
-                li 
-                    label(for="pr-17") 800 г
-                    input(type="radio" name="pr-5")#pr-17
-                    .checklist__price 650 руб.
-                li 
-                    label(for="pr-18") 1000 г
-                    input(type="radio" name="pr-5")#pr-18
-                    .checklist__price 700 руб.
-                li 
-                    label(for="pr-19") 1200 г
-                    input(type="radio" name="pr-5")#pr-19
-                    .checklist__price 750 руб.
-                li 
-                    label(for="pr-20") 1400 г
-                    input(type="radio" name="pr-5")#pr-20
-                    .checklist__price 820 руб.
+.priceblock.container
+    table.pricetable
+        thead 
+            tr 
+                th Виды начинок осетинских пирогов
+                th 800 г
+                th 1000 г
+                th 1200 г
+                th 1400 г
+                th Быстрый онлайн заказ
+        tbody
+            tr
+                td 
+                    .pricetable__head
+                        .pricetable__img
+                            img(src="img/sl-1.png" width="68" height="48")
+                        .pricetable__title С говядиной
+                td 
+                td 
+                td 
+                td 
+                td 
+            tr
+                td
+                    a(href="#").pricetable__link Осетинский пирог с капустой, яйцом и зеленью
+                td
+                    label.custom-radio
+                        input(type="radio" name="cs-1")
+                        span 650 руб.
+                td
+                    label.custom-radio
+                        input(type="radio" name="cs-1")
+                        span 700 руб.
+                td
+                    label.custom-radio
+                        input(type="radio" name="cs-1")
+                        span 750 руб.
+                td
+                    label.custom-radio
+                        input(type="radio" name="cs-1")
+                        span 800 руб.
+                td
+                    .pricetable__btnitem 
+                        button(type="button").pricetable__btn Добавить в корзину
 
-            .products__bottom
-                .switch-price
-                    span.switch-minus -
-                    input(type="text" value="1" disabled="disabled").quantity 
-                    span.switch-plus +
+            tr
+                td
+                    a(href="#").pricetable__link Осетинский пирог с говяжьей печенью и болгарским перцем
+                td
+                    label.custom-radio
+                        input(type="radio" name="cs-2")
+                        span 650 руб.
+                td
+                    label.custom-radio
+                        input(type="radio" name="cs-2")
+                        span 700 руб.
+                td
+                    label.custom-radio
+                        input(type="radio" name="cs-2")
+                        span 750 руб.
+                td
+                    label.custom-radio
+                        input(type="radio" name="cs-2")
+                        span 800 руб.
+                td
+                    .pricetable__btnitem 
+                        button(type="button").pricetable__btn Добавить в корзину
 
-                button(type="button").products__order
-                    img(src="img/cart.png" width="30" height="30")
-                    span В корзину
+            tr
+                td
+                    a(href="#").pricetable__link Осетинский пирог с лососем, сыром, шпинатом и зеленью
+                td
+                    label.custom-radio
+                        input(type="radio" name="cs-3")
+                        span 650 руб.
+                td
+                    label.custom-radio
+                        input(type="radio" name="cs-3")
+                        span 700 руб.
+                td
+                    label.custom-radio
+                        input(type="radio" name="cs-3")
+                        span 750 руб.
+                td
+                    label.custom-radio
+                        input(type="radio" name="cs-3")
+                        span 800 руб.
+                td
+                    .pricetable__btnitem 
+                        button(type="button").pricetable__btn Добавить в корзину
 
-        li 
-            .products__img 
-                img(src="img/pie-6.jpg")
+            tr
+                td
+                    a(href="#").pricetable__link Осетинский пирог с грибами, капустой и сыром
+                td
+                    label.custom-radio
+                        input(type="radio" name="cs-4")
+                        span 650 руб.
+                td
+                    label.custom-radio
+                        input(type="radio" name="cs-4")
+                        span 700 руб.
+                td
+                    label.custom-radio
+                        input(type="radio" name="cs-4")
+                        span 750 руб.
+                td
+                    label.custom-radio
+                        input(type="radio" name="cs-4")
+                        span 800 руб.
+                td
+                    .pricetable__btnitem 
+                        button(type="button").pricetable__btn Добавить в корзину
 
-            .products__title Осетинский пирог с мясом - «Фыдджин»
+            tr
+                td 
+                    .pricetable__head
+                        .pricetable__img
+                            img(src="img/sl-2.png" width="68" height="48")
+                        .pricetable__title С курицей
+                td 
+                td 
+                td 
+                td 
+                td 
 
-            ul.checklist
-                li 
-                    label(for="pr-21") 800 г
-                    input(type="radio" name="pr-6")#pr-21
-                    .checklist__price 650 руб.
-                li 
-                    label(for="pr-22") 1000 г
-                    input(type="radio" name="pr-6")#pr-22
-                    .checklist__price 700 руб.
-                li 
-                    label(for="pr-23") 1200 г
-                    input(type="radio" name="pr-6")#pr-23
-                    .checklist__price 750 руб.
-                li 
-                    label(for="pr-24") 1400 г
-                    input(type="radio" name="pr-6")#pr-24
-                    .checklist__price 820 руб.
+            tr
+                td
+                    a(href="#").pricetable__link Осетинский пирог с капустой, яйцом и зеленью
+                td
+                    label.custom-radio
+                        input(type="radio" name="cs-5")
+                        span 650 руб.
+                td
+                    label.custom-radio
+                        input(type="radio" name="cs-5")
+                        span 700 руб.
+                td
+                    label.custom-radio
+                        input(type="radio" name="cs-5")
+                        span 750 руб.
+                td
+                    label.custom-radio
+                        input(type="radio" name="cs-5")
+                        span 800 руб.
+                td
+                    .pricetable__btnitem 
+                        button(type="button").pricetable__btn Добавить в корзину
 
-            .products__bottom
-                .switch-price
-                    span.switch-minus -
-                    input(type="text" value="1" disabled="disabled").quantity 
-                    span.switch-plus +
+            tr
+                td
+                    a(href="#").pricetable__link Осетинский пирог с лососем, сыром, шпинатом и зеленью
+                td
+                    label.custom-radio
+                        input(type="radio" name="cs-6")
+                        span 650 руб.
+                td
+                    label.custom-radio
+                        input(type="radio" name="cs-6")
+                        span 700 руб.
+                td
+                    label.custom-radio
+                        input(type="radio" name="cs-6")
+                        span 750 руб.
+                td
+                    label.custom-radio
+                        input(type="radio" name="cs-6")
+                        span 800 руб.
+                td
+                    .pricetable__btnitem 
+                        button(type="button").pricetable__btn Добавить в корзину
 
-                button(type="button").products__order
-                    img(src="img/cart.png" width="30" height="30")
-                    span В корзину
+            tr
+                td
+                    a(href="#").pricetable__link Осетинский пирог с лососем, сыром, шпинатом и зеленью
+                td
+                    label.custom-radio
+                        input(type="radio" name="cs-7")
+                        span 650 руб.
+                td
+                    label.custom-radio
+                        input(type="radio" name="cs-7")
+                        span 700 руб.
+                td
+                    label.custom-radio
+                        input(type="radio" name="cs-7")
+                        span 750 руб.
+                td
+                    label.custom-radio
+                        input(type="radio" name="cs-7")
+                        span 800 руб.
+                td
+                    .pricetable__btnitem 
+                        button(type="button").pricetable__btn Добавить в корзину
 
-        li 
-            .products__img 
-                img(src="img/pie-7.jpg")
+            tr
+                td 
+                    .pricetable__head
+                        .pricetable__img
+                            img(src="img/sl-3.png" width="68" height="48")
+                        .pricetable__title С осетинским сыром
+                td 
+                td 
+                td 
+                td 
+                td 
 
-            .products__title Осетинский пирог с мясом - «Фыдджин»
+            tr
+                td
+                    a(href="#").pricetable__link Осетинский пирог с капустой, яйцом и зеленью
+                td
+                    label.custom-radio
+                        input(type="radio" name="cs-5")
+                        span 650 руб.
+                td
+                    label.custom-radio
+                        input(type="radio" name="cs-5")
+                        span 700 руб.
+                td
+                    label.custom-radio
+                        input(type="radio" name="cs-5")
+                        span 750 руб.
+                td
+                    label.custom-radio
+                        input(type="radio" name="cs-5")
+                        span 800 руб.
+                td
+                    .pricetable__btnitem 
+                        button(type="button").pricetable__btn Добавить в корзину
 
-            ul.checklist
-                li 
-                    label(for="pr-25") 800 г
-                    input(type="radio" name="pr-7")#pr-25
-                    .checklist__price 650 руб.
-                li 
-                    label(for="pr-26") 1000 г
-                    input(type="radio" name="pr-7")#pr-26
-                    .checklist__price 700 руб.
-                li 
-                    label(for="pr-27") 1200 г
-                    input(type="radio" name="pr-7")#pr-27
-                    .checklist__price 750 руб.
-                li 
-                    label(for="pr-28") 1400 г
-                    input(type="radio" name="pr-7")#pr-28
-                    .checklist__price 820 руб.
+            tr
+                td
+                    a(href="#").pricetable__link Осетинский пирог с лососем, сыром, шпинатом и зеленью
+                td
+                    label.custom-radio
+                        input(type="radio" name="cs-6")
+                        span 650 руб.
+                td
+                    label.custom-radio
+                        input(type="radio" name="cs-6")
+                        span 700 руб.
+                td
+                    label.custom-radio
+                        input(type="radio" name="cs-6")
+                        span 750 руб.
+                td
+                    label.custom-radio
+                        input(type="radio" name="cs-6")
+                        span 800 руб.
+                td
+                    .pricetable__btnitem 
+                        button(type="button").pricetable__btn Добавить в корзину
 
-            .products__bottom
-                .switch-price
-                    span.switch-minus -
-                    input(type="text" value="1" disabled="disabled").quantity 
-                    span.switch-plus +
+            tr
+                td
+                    a(href="#").pricetable__link Осетинский пирог с лососем, сыром, шпинатом и зеленью
+                td
+                    label.custom-radio
+                        input(type="radio" name="cs-7")
+                        span 650 руб.
+                td
+                    label.custom-radio
+                        input(type="radio" name="cs-7")
+                        span 700 руб.
+                td
+                    label.custom-radio
+                        input(type="radio" name="cs-7")
+                        span 750 руб.
+                td
+                    label.custom-radio
+                        input(type="radio" name="cs-7")
+                        span 800 руб.
+                td
+                    .pricetable__btnitem 
+                        button(type="button").pricetable__btn Добавить в корзину
 
-                button(type="button").products__order
-                    img(src="img/cart.png" width="30" height="30")
-                    span В корзину
+.loanblock.container 
+    h2.loanblock__title Онлайн заявка на осетинские пироги
 
-        li 
-            .products__img 
-                img(src="img/pie-8.jpg")
+    .loanblock__choose Выберите начинку:
 
-            .products__title Осетинский пирог с мясом - «Фыдджин»
+    ul.loanblock__list
+        +loanBlockList
 
-            ul.checklist
-                li 
-                    label(for="pr-29") 800 г
-                    input(type="radio" name="pr-8")#pr-29
-                    .checklist__price 650 руб.
-                li 
-                    label(for="pr-30") 1000 г
-                    input(type="radio" name="pr-8")#pr-30
-                    .checklist__price 700 руб.
-                li 
-                    label(for="pr-31") 1200 г
-                    input(type="radio" name="pr-8")#pr-31
-                    .checklist__price 750 руб.
-                li 
-                    label(for="pr-32") 1400 г
-                    input(type="radio" name="pr-8")#pr-32
-                    .checklist__price 820 руб.
+    .loanblock__img-left 
+        img(src="img/vg-l.png" width="383" height="301")
 
-            .products__bottom
-                .switch-price
-                    span.switch-minus -
-                    input(type="text" value="1" disabled="disabled").quantity 
-                    span.switch-plus +
+    .loanblock__img-right
+        img(src="img/vg-r.png" width="510" height="268")       
 
-                button(type="button").products__order
-                    img(src="img/cart.png" width="30" height="30")
-                    span В корзину
+    form.formloan(action="#")
+        .formloan__top
+            input(type="text" placeholder="Имя").inp
+            input(type="text" placeholder="Телефон для связи").inp
+
+        input(type="text" placeholder="Сколько пирогов хотите заказать?").inp._height
+        textarea(placeholder="Комментарий").textarea
+
+        button(type="submit").formbtn Отправить заявку
+
+        .checkblock
+            input(type="checkbox")
+            label Я согласен на обработку персональных данных
+
+.urgentblock.container
+    h2.main-title Срочная доставка осетинских пирогов в Москве
+
+    .delivery-slider.swiper-container
+        .swiper-wrapper
+            .swiper-slide 
+                .delivery-slider__item
+                    .delivery-slider__img
+                        img(src="img/d-1.png")
+
+                    .delivery-slider__title
+                        |Пироги  
+                        span на День рождения
+
+                    ul.delivery-list
+                        li 
+                            a(href="#") «Фыдджин» - с мясом
+                        li 
+                            a(href="#") С капустой, яйцом и жареным луком
+                        li 
+                            a(href="#") С капустой и сыром
+                        li 
+                            a(href="#") С сыром осетинским (уалибах)
+
+            .swiper-slide 
+                .delivery-slider__item
+                    .delivery-slider__img
+                        img(src="img/d-2.png")
+
+                    .delivery-slider__title
+                        |Пироги  
+                        span на свадьбу
+
+                    ul.delivery-list
+                        li 
+                            a(href="#") «Фыдджин» - с мясом
+                        li 
+                            a(href="#") С капустой, яйцом и жареным луком
+                        li 
+                            a(href="#") С капустой и сыром
+                        li 
+                            a(href="#") С сыром осетинским (уалибах)
+
+            .swiper-slide 
+                .delivery-slider__item
+                    .delivery-slider__img
+                        img(src="img/d-3.png")
+
+                    .delivery-slider__title
+                        |Пироги  
+                        span на работу
+
+                    ul.delivery-list
+                        li 
+                            a(href="#") «Фыдджин» - с мясом
+                        li 
+                            a(href="#") С капустой, яйцом и жареным луком
+                        li 
+                            a(href="#") С капустой и сыром
+                        li 
+                            a(href="#") С сыром осетинским (уалибах)
+
+            .swiper-slide 
+                .delivery-slider__item
+                    .delivery-slider__img
+                        img(src="img/d-4.png")
+
+                    .delivery-slider__title
+                        |Пироги  
+                        span на праздниках
+
+                    ul.delivery-list
+                        li 
+                            a(href="#") «Фыдджин» - с мясом
+                        li 
+                            a(href="#") С капустой, яйцом и жареным луком
+                        li 
+                            a(href="#") С капустой и сыром
+                        li 
+                            a(href="#") С сыром осетинским (уалибах)
+
+        .swiper-pagination
+
+        .swiper-button-next
+        .swiper-button-prev
+
+form(action="#").actionblock
+    .actionblock__column
+        .actionblock__title Акция! У вас день рождения? Дарим пирог в подарок!
+
+        ul.actionblock__list
+            li 
+                label(for="nameinp") Ваше имя
+                input(type="text" placeholder="Имя")#nameinp
+            li 
+                label(for="phoneinp") Ваш контактный телефон
+                input(type="text" placeholder="+7 (___) ___-__-__")#phoneinp
+            li 
+                label(for="cominp") Комментарий к заказу
+                textarea(placeholder="Напишите ваши пожелания к заказу").actionblock__textarea#cominp
+
+        button(type="submit").actionblock__btn Заказать пироги с бесплатной доставкой
+
+        .checkblock
+            input(type="checkbox")
+            label Я согласен на обработку персональных данных
+
+    .actionblock__column
+        img(src="img/pie-or.jpg")
+
+
+
+
+
 
 
 

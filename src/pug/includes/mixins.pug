@@ -3,6 +3,41 @@ mixin icon(name,mod)
 	svg(class="icon icon-" + name + ' ' + mod)
 		use(xlink:href="/img/svg/sprite.svg#" + name)
 
+mixin pieSlides
+	.swiper-slide 
+		.products__img 
+			img(src="img/pie-8.jpg")
+
+		.products__title Осетинский пирог с мясом - «Фыдджин»
+
+		ul.checklist
+			li 
+				label(for="pr-33") 800 г
+				input(type="radio" name="pr-9")#pr-33
+				.checklist__price 650 руб.
+			li 
+				label(for="pr-34") 1000 г
+				input(type="radio" name="pr-9")#pr-34
+				.checklist__price 700 руб.
+			li 
+				label(for="pr-35") 1200 г
+				input(type="radio" name="pr-9")#pr-35
+				.checklist__price 750 руб.
+			li 
+				label(for="pr-36") 1400 г
+				input(type="radio" name="pr-9")#pr-36
+				.checklist__price 820 руб.
+
+		.products__bottom
+			.switch-price
+				span.switch-minus -
+				input(type="text" value="1" disabled="disabled").quantity 
+				span.switch-plus +
+
+			button(type="button").products__order
+				img(src="img/cart.png" width="30" height="30")
+				span В корзину
+
 mixin productSlider
 	.product-gallery.swiper-container
 		.swiper-wrapper
@@ -272,3 +307,442 @@ mixin productSlider
 
 		.swiper-button-next
 		.swiper-button-prev
+
+
+mixin productLising
+	li 
+		.products__img 
+			img(src="img/pie-1.jpg")
+
+		.products__title Осетинский пирог с мясом - «Фыдджин»
+
+		ul.checklist
+			li 
+				label(for="pr-1") 800 г
+				input(type="radio" name="pr-1")#pr-1
+				.checklist__price 650 руб.
+			li 
+				label(for="pr-2") 1000 г
+				input(type="radio" name="pr-1")#pr-2
+				.checklist__price 700 руб.
+			li 
+				label(for="pr-3") 1200 г
+				input(type="radio" name="pr-1")#pr-3
+				.checklist__price 750 руб.
+			li 
+				label(for="pr-4") 1400 г
+				input(type="radio" name="pr-1")#pr-4
+				.checklist__price 820 руб.
+
+		.products__bottom
+			.switch-price
+				span.switch-minus -
+				input(type="text" value="1" disabled="disabled").quantity 
+				span.switch-plus +
+
+			button(type="button").products__order
+				img(src="img/cart.png" width="30" height="30")
+				span В корзину
+
+	li 
+		.products__img 
+			img(src="img/pie-2.jpg")
+
+		.products__title Осетинский пирог с мясом - «Фыдджин»
+
+		ul.checklist
+			li 
+				label(for="pr-5") 800 г
+				input(type="radio" name="pr-2")#pr-5
+				.checklist__price 650 руб.
+			li 
+				label(for="pr-6") 1000 г
+				input(type="radio" name="pr-2")#pr-6
+				.checklist__price 700 руб.
+			li 
+				label(for="pr-7") 1200 г
+				input(type="radio" name="pr-2")#pr-7
+				.checklist__price 750 руб.
+			li 
+				label(for="pr-8") 1400 г
+				input(type="radio" name="pr-2")#pr-8
+				.checklist__price 820 руб.
+
+		.products__bottom
+			.switch-price
+				span.switch-minus -
+				input(type="text" value="1" disabled="disabled").quantity 
+				span.switch-plus +
+
+			button(type="button").products__order
+				img(src="img/cart.png" width="30" height="30")
+				span В корзину
+
+	li 
+		.products__img 
+			img(src="img/pie-3.jpg")
+
+		.products__title Осетинский пирог с мясом - «Фыдджин»
+
+		ul.checklist
+			li 
+				label(for="pr-9") 800 г
+				input(type="radio" name="pr-3")#pr-9
+				.checklist__price 650 руб.
+			li 
+				label(for="pr-10") 1000 г
+				input(type="radio" name="pr-3")#pr-10
+				.checklist__price 700 руб.
+			li 
+				label(for="pr-11") 1200 г
+				input(type="radio" name="pr-3")#pr-11
+				.checklist__price 750 руб.
+			li 
+				label(for="pr-12") 1400 г
+				input(type="radio" name="pr-3")#pr-12
+				.checklist__price 820 руб.
+
+		.products__bottom
+			.switch-price
+				span.switch-minus -
+				input(type="text" value="1" disabled="disabled").quantity 
+				span.switch-plus +
+
+			button(type="button").products__order
+				img(src="img/cart.png" width="30" height="30")
+				span В корзину
+
+	li 
+		.products__img 
+			img(src="img/pie-4.jpg")
+
+		.products__title Осетинский пирог с мясом - «Фыдджин»
+
+		ul.checklist
+			li 
+				label(for="pr-13") 800 г
+				input(type="radio" name="pr-4")#pr-13
+				.checklist__price 650 руб.
+			li 
+				label(for="pr-14") 1000 г
+				input(type="radio" name="pr-4")#pr-14
+				.checklist__price 700 руб.
+			li 
+				label(for="pr-15") 1200 г
+				input(type="radio" name="pr-4")#pr-15
+				.checklist__price 750 руб.
+			li 
+				label(for="pr-16") 1400 г
+				input(type="radio" name="pr-4")#pr-16
+				.checklist__price 820 руб.
+
+		.products__bottom
+			.switch-price
+				span.switch-minus -
+				input(type="text" value="1" disabled="disabled").quantity 
+				span.switch-plus +
+
+			button(type="button").products__order
+				img(src="img/cart.png" width="30" height="30")
+				span В корзину
+
+	li 
+		.products__img 
+			img(src="img/pie-5.jpg")
+
+		.products__title Осетинский пирог с мясом - «Фыдджин»
+
+		ul.checklist
+			li 
+				label(for="pr-17") 800 г
+				input(type="radio" name="pr-5")#pr-17
+				.checklist__price 650 руб.
+			li 
+				label(for="pr-18") 1000 г
+				input(type="radio" name="pr-5")#pr-18
+				.checklist__price 700 руб.
+			li 
+				label(for="pr-19") 1200 г
+				input(type="radio" name="pr-5")#pr-19
+				.checklist__price 750 руб.
+			li 
+				label(for="pr-20") 1400 г
+				input(type="radio" name="pr-5")#pr-20
+				.checklist__price 820 руб.
+
+		.products__bottom
+			.switch-price
+				span.switch-minus -
+				input(type="text" value="1" disabled="disabled").quantity 
+				span.switch-plus +
+
+			button(type="button").products__order
+				img(src="img/cart.png" width="30" height="30")
+				span В корзину
+
+	li 
+		.products__img 
+			img(src="img/pie-6.jpg")
+
+		.products__title Осетинский пирог с мясом - «Фыдджин»
+
+		ul.checklist
+			li 
+				label(for="pr-21") 800 г
+				input(type="radio" name="pr-6")#pr-21
+				.checklist__price 650 руб.
+			li 
+				label(for="pr-22") 1000 г
+				input(type="radio" name="pr-6")#pr-22
+				.checklist__price 700 руб.
+			li 
+				label(for="pr-23") 1200 г
+				input(type="radio" name="pr-6")#pr-23
+				.checklist__price 750 руб.
+			li 
+				label(for="pr-24") 1400 г
+				input(type="radio" name="pr-6")#pr-24
+				.checklist__price 820 руб.
+
+		.products__bottom
+			.switch-price
+				span.switch-minus -
+				input(type="text" value="1" disabled="disabled").quantity 
+				span.switch-plus +
+
+			button(type="button").products__order
+				img(src="img/cart.png" width="30" height="30")
+				span В корзину
+
+	li 
+		.products__img 
+			img(src="img/pie-7.jpg")
+
+		.products__title Осетинский пирог с мясом - «Фыдджин»
+
+		ul.checklist
+			li 
+				label(for="pr-25") 800 г
+				input(type="radio" name="pr-7")#pr-25
+				.checklist__price 650 руб.
+			li 
+				label(for="pr-26") 1000 г
+				input(type="radio" name="pr-7")#pr-26
+				.checklist__price 700 руб.
+			li 
+				label(for="pr-27") 1200 г
+				input(type="radio" name="pr-7")#pr-27
+				.checklist__price 750 руб.
+			li 
+				label(for="pr-28") 1400 г
+				input(type="radio" name="pr-7")#pr-28
+				.checklist__price 820 руб.
+
+		.products__bottom
+			.switch-price
+				span.switch-minus -
+				input(type="text" value="1" disabled="disabled").quantity 
+				span.switch-plus +
+
+			button(type="button").products__order
+				img(src="img/cart.png" width="30" height="30")
+				span В корзину
+
+	li 
+		.products__img 
+			img(src="img/pie-8.jpg")
+
+		.products__title Осетинский пирог с мясом - «Фыдджин»
+
+		ul.checklist
+			li 
+				label(for="pr-29") 800 г
+				input(type="radio" name="pr-8")#pr-29
+				.checklist__price 650 руб.
+			li 
+				label(for="pr-30") 1000 г
+				input(type="radio" name="pr-8")#pr-30
+				.checklist__price 700 руб.
+			li 
+				label(for="pr-31") 1200 г
+				input(type="radio" name="pr-8")#pr-31
+				.checklist__price 750 руб.
+			li 
+				label(for="pr-32") 1400 г
+				input(type="radio" name="pr-8")#pr-32
+				.checklist__price 820 руб.
+
+		.products__bottom
+			.switch-price
+				span.switch-minus -
+				input(type="text" value="1" disabled="disabled").quantity 
+				span.switch-plus +
+
+			button(type="button").products__order
+				img(src="img/cart.png" width="30" height="30")
+				span В корзину
+
+mixin loanBlockList 
+	li 
+		label.loanblock__radio
+			input(type="radio" name="lb-1")
+			span Мясо
+	li 
+		label.loanblock__radio
+			input(type="radio" name="lb-1")
+			span Курица
+	li 
+		label.loanblock__radio
+			input(type="radio" name="lb-1")
+			span Сыр
+	li 
+		label.loanblock__radio
+			input(type="radio" name="lb-1")
+			span Капуста
+	li 
+		label.loanblock__radio
+			input(type="radio" name="lb-1")
+			span Рыба
+	li 
+		label.loanblock__radio
+			input(type="radio" name="lb-1")
+			span Кабачки
+	li 
+		label.loanblock__radio
+			input(type="radio" name="lb-1")
+			span Зелень
+	li 
+		label.loanblock__radio
+			input(type="radio" name="lb-1")
+			span Сладкие
+	li 
+		label.loanblock__radio
+			input(type="radio" name="lb-1")
+			span Картофель
+	li 
+		label.loanblock__radio
+			input(type="radio" name="lb-1")
+			span Веганские
+	li 
+		label.loanblock__radio
+			input(type="radio" name="lb-1")
+			span Без мяса
+	li 
+		label.loanblock__radio
+			input(type="radio" name="lb-1")
+			span Постные
+	li 
+		label.loanblock__radio
+			input(type="radio" name="lb-1")
+			span Курица
+	li 
+		label.loanblock__radio
+			input(type="radio" name="lb-1")
+			span Сыр
+	li 
+		label.loanblock__radio
+			input(type="radio" name="lb-1")
+			span Капуста
+	li 
+		label.loanblock__radio
+			input(type="radio" name="lb-1")
+			span Рыба
+
+mixin footerList 
+	.products-block
+		.products-block__title
+			img(src="img/m-1.png" alt="Сытные" width="20" height="20")
+			a(href="#").products-block__link Сытные
+
+		ul.product-list
+			li 
+				img(src="img/meat-icon.png" alt="Сытные" width="20" height="20")
+				a(href="#") С мясом 
+			li 
+				img(src="img/chicken-icon.png" alt="Сытные" width="20" height="20")
+				a(href="#") С курицей
+			li 
+				img(src="img/turkey-icon.png" alt="Сытные" width="20" height="20")
+				a(href="#") С индейкой 
+			li 
+				img(src="img/fish-icon.png" alt="Сытные" width="20" height="20")
+				a(href="#") С рыбой
+
+	.products-block
+		.products-block__title
+			img(src="img/m-2.png" alt="Сытные" width="20" height="20")
+			a(href="#").products-block__link Постные
+
+		ul.product-list
+			li 
+				img(src="img/kabachok-icon.png" alt="Сытные" width="20" height="20")
+				a(href="#") С кабачком
+			li 
+				img(src="img/cap-icon.png" alt="Сытные" width="20" height="20")
+				a(href="#") С капустой
+			li 
+				img(src="img/plant-icon.png" alt="Сытные" width="20" height="20")
+				a(href="#") С зеленью
+			li 
+				img(src="img/potato-icon.png" alt="Сытные" width="20" height="20")
+				a(href="#") С картошкой
+
+	.products-block
+		.products-block__title
+			img(src="img/m-3.png" alt="Сытные" width="20" height="20")
+			a(href="#").products-block__link Сладкие
+
+		ul.product-list
+			li 
+				img(src="img/cherry-icon.png" alt="Сытные" width="20" height="20")
+				a(href="#") С вишней
+			li 
+				img(src="img/lemon-icon.png" alt="Сытные" width="20" height="20")
+				a(href="#") С лимоном
+			li 
+				img(src="img/fruit-icon.png" alt="Сытные" width="20" height="20")
+				a(href="#") С яблоком
+			li 
+				img(src="img/raspberry-icon.png" alt="Сытные" width="20" height="20")
+				a(href="#") С ежевикой
+			li 
+				img(src="img/apelsin-icon.png" alt="Сытные" width="20" height="20")
+				a(href="#") С апельсином
+
+	.products-block
+		.products-block__title
+			img(src="img/m-4.png" alt="Сытные" width="20" height="20")
+			a(href="#").products-block__link Веганские
+
+		ul.product-list
+			li 
+				img(src="img/kabachok-icon.png" alt="Сытные" width="20" height="20")
+				a(href="#") С кабачком
+			li 
+				img(src="img/cap-icon.png" alt="Сытные" width="20" height="20")
+				a(href="#") С капустой
+			li 
+				img(src="img/plant-icon.png" alt="Сытные" width="20" height="20")
+				a(href="#") С зеленью
+			li 
+				img(src="img/potato-icon.png" alt="Сытные" width="20" height="20")
+				a(href="#") С картошкой
+
+	.products-block
+		.products-block__title
+			img(src="img/m-5.png" alt="Сытные" width="20" height="20")
+			a(href="#").products-block__link Традиционные
+
+		ul.product-list
+			li 
+				img(src="img/meat-icon.png" alt="Сытные" width="20" height="20")
+				a(href="#") С мясом 
+			li 
+				img(src="img/chicken-icon.png" alt="Сытные" width="20" height="20")
+				a(href="#") С курицей
+			li 
+				img(src="img/turkey-icon.png" alt="Сытные" width="20" height="20")
+				a(href="#") С индейкой 
+			li 
+				img(src="img/fish-icon.png" alt="Сытные" width="20" height="20")
+				a(href="#") С рыбой
