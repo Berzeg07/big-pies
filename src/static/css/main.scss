@@ -75,14 +75,17 @@
 }
 
 .select-block {
+    background: #FFDD2D;
+    padding: 12px;
+}
+
+.select-block._header {
+    position: relative;
     display: flex;
     align-items: center;
     max-width: 1030px;
-    width: 100%;
-    background: #FFDD2D;
     border-radius: 4px;
-    position: relative;
-    padding: 12px;
+    width: 100%;
 
     &:after {
         content: '';
@@ -440,7 +443,7 @@
     background: white;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     padding: 18px;
-    z-index: 10;
+    z-index: 500;
     left: -100%;
 
     .address {
@@ -763,5 +766,253 @@
 @media (max-width: 1279px) {
     .banner-slider {
         display: none;
+    }
+}
+
+.container {
+    max-width: 1790px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.main-title {
+    font-family: 'GothamPro';
+    font-weight: 500;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+
+    @media (max-width: 1279px) {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+}
+
+.prodblock {
+    padding-top: 30px;
+}
+
+.mobblock {
+    margin-bottom: 20px;
+
+    .banner-slider__payment {
+        padding: 10px 15px;
+        border-radius: 0;
+        background: white;
+
+        img {
+            margin-bottom: 10px;
+        }
+    }
+}
+
+.mobblock._action {
+    padding: 18px 0px 0px;
+    margin-bottom: 0;
+
+    .banner-slider__action {
+        margin: 0 auto;
+    }
+}
+
+.select-block._mob {
+    .select {
+        &:not(:last-child) {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.mobblock__banner {
+    position: relative;
+    background: url("../img/banner-mob.jpg") no-repeat center;
+    background-size: cover;
+    height: 144px;
+    text-align: center;
+    padding-top: 20px;
+    font-family: 'GothamPro';
+    font-weight: 500;
+    color: white;
+    font-size: 22px;
+
+    p {
+        position: relative;
+        z-index: 5;
+    }
+
+    &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(180deg, #0F0933 0%, rgba(196, 196, 196, 0) 100%);
+        z-index: 1;
+    }
+}
+
+@media (min-width: 1280px) {
+    .mobblock {
+        display: none;
+    }
+}
+
+.products {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.products>li {
+    max-width: 409px;
+    width: 100%;
+    background: #FFFFFF;
+    border: 2px solid #E6E6E6;
+    overflow: hidden;
+    border-radius: 23px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.products__top {
+    padding: 14px 25px;
+}
+
+.products__title {
+    margin-bottom: 20px;
+
+    a {
+        font-weight: 500;
+        text-decoration: underline;
+    }
+}
+
+.checklist {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.checklist__weight {
+    color: #757575;
+}
+
+.products__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.switch-price {
+    width: 148px;
+    border-right: 2px solid white;
+    background: #FFE67D;
+    height: 76px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    span {
+        font-size: 28px;
+        cursor: pointer;
+    }
+}
+
+.quantity {
+    background: #FFFFFF;
+    border-radius: 2px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border: none;
+    margin-left: 13px;
+    margin-right: 13px;
+}
+
+.products__order {
+    width: calc(100% - 150px);
+    background: #FFDD2D;
+    height: 76px;
+}
+
+.products__order {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+
+    img {
+        margin-right: 13px;
+    }
+}
+
+/* для элемента input c type="radio" */
+.custom-radio>input {
+    display: none;
+}
+
+/* для элемента label связанного с .custom-radio */
+.custom-radio>span {
+    font-family: 'GothamPro';
+    font-weight: 700;
+    display: block;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+/* создание в label псевдоэлемента  before со следующими стилями */
+.custom-radio>span::before {
+    content: '';
+    display: block;
+    width: 38px;
+    height: 38px;
+    border: 2px solid #EED25D;
+    border-radius: 2px;
+    margin: 7px auto;
+}
+
+/* стили при наведении курсора на радио */
+.custom-radio>input:not(:disabled):not(:checked)+span:hover::before {
+    border-color: #b3d7ff;
+    cursor: pointer;
+}
+
+/* стили для активной радиокнопки (при нажатии на неё) */
+.custom-radio>input:not(:disabled):active+span::before {
+    background: url("../img/checked.png") no-repeat center;
+}
+
+/* стили для радиокнопки, находящейся в фокусе */
+// .custom-radio>input:focus+span::before {
+//     box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+// }
+
+/* стили для радиокнопки, находящейся в фокусе и не находящейся в состоянии checked */
+.custom-radio>input:focus:not(:checked)+span::before {
+    border-color: #80bdff;
+}
+
+/* стили для радиокнопки, находящейся в состоянии checked */
+.custom-radio>input:checked+span::before {
+    background: url("../img/checked.png") no-repeat center;
+}
+
+/* стили для радиокнопки, находящейся в состоянии disabled */
+.custom-radio>input:disabled+span::before {
+    background-color: #e9ecef;
+}
+
+@media (max-width: 1279px) {
+    .products {
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 899px) {
+    .products {
+        justify-content: center;
     }
 }

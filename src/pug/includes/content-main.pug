@@ -1,5 +1,39 @@
+.mobblock
+    .banner-slider__payment
+        p Оплата наличными курьеру и по карте:
+        img(src="img/bank.png" alt="Оплата наличными курьеру и по карте:")
+        p + онлайн оплата на сайте
+    .mobblock__banner
+        p Бесплатная доставка<br> осетинских пирогов в<br> Москве
+    .select-block._mob
+        .select
+            .select__icon 
+                img(src="img/metro-icon.png")
+            select 
+                option Выберите метро
+                option Тест
+
+        .select
+            .select__icon 
+                img(src="img/pin-icon.png")
+            select 
+                option Выберите округ
+                option Тест
+
+        .select
+            .select__icon 
+                img(src="img/compass-icon.png")
+            select 
+                option Выберите район
+                option Тест
+
 .product-gallery-wrap
     +productSlider
+
+.mobblock._action
+    .banner-slider__action 
+        p Акция!
+        span пирог в подарок
 
 //- Чек бокс внутри label
 //- https://itchief.ru/examples/lab.php?topic=html-and-css&file=styling-checkbox-and-radio-3
@@ -61,11 +95,13 @@
     .swiper-button-next._white
     .swiper-button-prev._white
 
-.prodblock.conatiner 
+.prodblock.container 
     h1.main-title Осетинские пироги с мясом
 
     ul.products 
         +productLising
+
+
 
 .infoblock.container 
     h2.main-title Осетинские пироги в москве с доставкой точно ко времени
