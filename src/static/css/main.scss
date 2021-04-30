@@ -528,3 +528,240 @@
         display: none;
     }
 }
+
+.product-gallery-wrap {
+    padding: 30px 20px 35px;
+    box-shadow: 0px 4px 20px rgba(29, 52, 83, 0.13);
+}
+
+.swiper-container {
+    .swiper-slide {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.product-gallery__img {
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+.product-gallery__title {
+    color: #757575;
+    margin-bottom: 10px;
+    text-decoration: underline;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.stars__rayting {
+    color: #9F9F9F;
+    padding-left: 9px;
+}
+
+.product-gallery__price {
+    padding-top: 10px;
+    text-align: center;
+    color: #757575;
+    font-weight: 500;
+}
+
+.swiper-button-next {
+    width: 28px;
+    height: 28px;
+    border-radius: 10em;
+    background: #EAF6FC url("../img/arrow-right.png") no-repeat center;
+    right: 0;
+
+    @media (min-width: 1280px) {
+        width: 42px;
+        height: 42px;
+    }
+}
+
+.swiper-button-prev {
+    width: 28px;
+    height: 28px;
+    border-radius: 10em;
+    background: #EAF6FC url("../img/arrow-left.png") no-repeat center;
+    left: 0;
+
+    @media (min-width: 1280px) {
+        width: 42px;
+        height: 42px;
+    }
+}
+
+.swiper-button-next._white {
+    width: 30px;
+    height: 30px;
+    background: url("../img/arrow_right-w.png") no-repeat center;
+    background-size: contain;
+}
+
+.swiper-button-prev._white {
+    width: 30px;
+    height: 30px;
+    background: url("../img/arrow_left-w.png") no-repeat center;
+    background-size: contain;
+}
+
+@media (max-width: 1599px) {
+    .product-gallery-wrap {
+        padding: 12px;
+    }
+}
+
+.swiper-pagination {
+    bottom: 0;
+
+    .swiper-pagination-bullet {
+        width: 12px;
+        height: 12px;
+        background: #E6E6E6;
+    }
+
+    .swiper-pagination-bullet-active {
+        background: #FFDD2D;
+    }
+}
+
+.banner-slider__item {
+    position: relative;
+
+    &:after {
+        content: "";
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        z-index: 10;
+        background: linear-gradient(180deg, #0F0933 0%, rgba(196, 196, 196, 0) 100%);
+    }
+}
+
+.banner-slider__list {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 20;
+    padding: 0 107px;
+
+    li {
+        &:nth-child(2) {
+            padding-right: 140px;
+        }
+    }
+}
+
+.banner-slider__payment {
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 10px;
+    padding: 20px 23px;
+    text-align: center;
+
+    img {
+        margin-top: 11px;
+        margin-bottom: 20px;
+    }
+}
+
+.banner-slider__title {
+    font-family: 'GothamPro';
+    text-align: center;
+    font-size: 45px;
+    font-weight: 500;
+    color: white;
+    margin-bottom: 25px;
+}
+
+.banner-slider__link {
+    max-width: 411px;
+    width: 100%;
+    height: 64px;
+    line-height: 64px;
+    display: block;
+    background: #FFDD2D;
+    border-radius: 6px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.banner-slider__action {
+    width: 200px;
+    height: 200px;
+    border-radius: 10em;
+    background: #FFDD2D url("../img/present-icon.png") no-repeat center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    p {
+        font-family: 'GothamPro';
+        font-weight: 700;
+        color: #FF0000;
+        font-size: 45px;
+    }
+
+    span {
+        font-weight: 500;
+        font-size: 16px;
+        text-transform: uppercase;
+    }
+}
+
+@media (max-width: 1899px) {
+    .banner-slider__title {
+        font-size: 35px;
+    }
+
+    .banner-slider__list li:nth-child(2) {
+        padding-right: 100px;
+    }
+}
+
+@media (max-width: 1599px) {
+    .banner-slider__title {
+        font-size: 25px;
+    }
+
+    .banner-slider__link {
+        height: 40px;
+        line-height: 40px;
+    }
+
+    .banner-slider__list li:nth-child(2) {
+        padding-right: 0px;
+    }
+
+    .banner-slider__list {
+        padding: 0 50px;
+    }
+
+    .banner-slider__action {
+        width: 150px;
+        height: 150px;
+
+        p {
+            font-size: 30px;
+        }
+
+        span {
+            font-size: 13px;
+        }
+    }
+}
+
+@media (max-width: 1279px) {
+    .banner-slider {
+        display: none;
+    }
+}

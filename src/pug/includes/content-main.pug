@@ -1,4 +1,5 @@
-+productSlider
+.product-gallery-wrap
+    +productSlider
 
 //- Чек бокс внутри label
 //- https://itchief.ru/examples/lab.php?topic=html-and-css&file=styling-checkbox-and-radio-3
@@ -6,53 +7,59 @@
 .banner-slider.swiper-container
     .swiper-wrapper
         .swiper-slide 
-            ul.banner-slider__list
-                li 
-                    .banner-slider__payment
-                        p Оплата наличными курьеру и по карте:
-                        img(src="img/banks.png" alt="Оплата наличными курьеру и по карте:")
-                        p + онлайн оплата на сайте
-                li 
-                    .banner-slider__title Бесплатная доставка осетинских пирогов в Москве
-                    a(href="#").banner-slider__link Заказать осетинские пироги
-                li
-                    .banner-slider__action 
-                        p Акция!
-                        span пирог в подарок
+            .banner-slider__item
+                img(src="img/banner.jpg")
+                ul.banner-slider__list
+                    li 
+                        .banner-slider__payment
+                            p Оплата наличными курьеру и по карте:
+                            img(src="img/bank.png" alt="Оплата наличными курьеру и по карте:")
+                            p + онлайн оплата на сайте
+                    li 
+                        .banner-slider__title Бесплатная доставка осетинских<br> пирогов в Москве
+                        a(href="#").banner-slider__link Заказать осетинские пироги
+                    li
+                        .banner-slider__action 
+                            p Акция!
+                            span пирог в подарок
         .swiper-slide 
-            ul.banner-slider__list
-                li 
-                    .banner-slider__payment
-                        p Оплата наличными курьеру и по карте:
-                        img(src="img/banks.png" alt="Оплата наличными курьеру и по карте:")
-                        p + онлайн оплата на сайте
-                li 
-                    .banner-slider__title Бесплатная доставка осетинских пирогов в Москве
-                    a(href="#").banner-slider__link Заказать осетинские пироги
-                li
-                    .banner-slider__action 
-                        p Акция!
-                        span пирог в подарок
+            .banner-slider__item
+                img(src="img/banner.jpg")
+                ul.banner-slider__list
+                    li 
+                        .banner-slider__payment
+                            p Оплата наличными курьеру и по карте:
+                            img(src="img/bank.png" alt="Оплата наличными курьеру и по карте:")
+                            p + онлайн оплата на сайте
+                    li 
+                        .banner-slider__title Бесплатная доставка осетинских<br> пирогов в Москве
+                        a(href="#").banner-slider__link Заказать осетинские пироги
+                    li
+                        .banner-slider__action 
+                            p Акция!
+                            span пирог в подарок
 
         .swiper-slide 
-            ul.banner-slider__list
-                li 
-                    .banner-slider__payment
-                        p Оплата наличными курьеру и по карте:
-                        img(src="img/banks.png" alt="Оплата наличными курьеру и по карте:")
-                        p + онлайн оплата на сайте
-                li 
-                    .banner-slider__title Бесплатная доставка осетинских пирогов в Москве
-                    a(href="#").banner-slider__link Заказать осетинские пироги
-                li
-                    .banner-slider__action 
-                        p Акция!
-                        span пирог в подарок
+            .banner-slider__item
+                img(src="img/banner.jpg")
+                ul.banner-slider__list
+                    li 
+                        .banner-slider__payment
+                            p Оплата наличными курьеру и по карте:
+                            img(src="img/bank.png" alt="Оплата наличными курьеру и по карте:")
+                            p + онлайн оплата на сайте
+                    li 
+                        .banner-slider__title Бесплатная доставка осетинских<br> пирогов в Москве
+                        a(href="#").banner-slider__link Заказать осетинские пироги
+                    li
+                        .banner-slider__action 
+                            p Акция!
+                            span пирог в подарок
 
     .swiper-pagination
 
-    .swiper-button-next
-    .swiper-button-prev
+    .swiper-button-next._white
+    .swiper-button-prev._white
 
 .prodblock.conatiner 
     h1.main-title Осетинские пироги с мясом
