@@ -7,7 +7,7 @@
 
     .header__column
         .header__top 
-            .address
+            .address._header
                 img(src="img/map-icon.png" alt="Москва, 1-й Смоленский переулок, 22/10" width="30" height="30")
                 span Москва, 1-й Смоленский переулок, 22/10
 
@@ -26,18 +26,24 @@
                     a(href="#") Контакты
 
         .header__bottom 
-            .select-block 
+            .select-block._header 
                 .select._metro
+                    .select__icon 
+                        img(src="img/metro-icon.png")
                     select 
                         option Выберите метро
                         option Тест
 
                 .select._okrug
+                    .select__icon 
+                        img(src="img/pin-icon.png")
                     select 
                         option Выберите округ
                         option Тест
 
                 .select._district
+                    .select__icon 
+                        img(src="img/compass-icon.png")
                     select 
                         option Выберите район
                         option Тест
@@ -60,22 +66,22 @@
 
                     .stars__rayting 4,5   
 
-                ul.basket-block 
-                    li
-                        .basket 
-                            img(src="img/cart.png" alt="Корзина" width="40" height="40")
-                            span.basket__count 8
-                    li
-                        .basket-price 2400 Р 
-                    li 
-                        a(href="#").basket-link Корзина 
+            ul.basket-block._header
+                li
+                    .basket 
+                        img(src="img/cart.png" alt="Корзина" width="40" height="40")
+                        span.basket__count 8
+                li
+                    .basket-price 2400 &#8381; 
+                li 
+                    a(href="#").basket-link Корзина 
 
     .header__column
         ul.contact-info
             li
                 span Единая служба доставки 
             li 
-                a(href="tel:74993430892").phone 
+                a(href="tel:74993430892").phone._header 
                     span +7 (499) 343-08-92
             li
                 .worktime 
@@ -86,13 +92,12 @@
     .logo 
         .logo__img 
             img(src="img/logo.png" alt="Большие пироги")
-        .logo__article Осетинские пироги
 
     .address
         img(src="img/map-icon.png" alt="Москва, 1-й Смоленский переулок, 22/10" width="30" height="30")
         span Москва, 1-й Смоленский переулок, 22/10
 
-    ul.navigate
+    ul.navigate._sticky
         li
             a(href="#") О компании
         li

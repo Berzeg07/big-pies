@@ -23,11 +23,15 @@ ul {
 
 body {
     font-family: 'HelveticaNeueCyr';
-    font-weight: 300;
+    font-weight: 400;
+    color: #333333;
     scroll-behavior: smooth;
     text-rendering: optimizeSpeed;
     overflow-x: hidden;
     height: 100%;
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 ol,
