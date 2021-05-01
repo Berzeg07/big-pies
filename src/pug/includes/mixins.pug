@@ -5,38 +5,44 @@ mixin icon(name,mod)
 
 mixin pieSlides
 	.swiper-slide 
-		.products__img 
-			img(src="img/pie-8.jpg")
+		.product-item  
+			.products__img 
+				img(src="img/pie-1.jpg")
 
-		.products__title Осетинский пирог с мясом - «Фыдджин»
+			.products__top
+				.products__title 
+					a(href="#")  Осетинский пирог с мясом - «Фыдджин»
 
-		ul.checklist
-			li 
-				label(for="pr-33") 800 г
-				input(type="radio" name="pr-9")#pr-33
-				.checklist__price 650 руб.
-			li 
-				label(for="pr-34") 1000 г
-				input(type="radio" name="pr-9")#pr-34
-				.checklist__price 700 руб.
-			li 
-				label(for="pr-35") 1200 г
-				input(type="radio" name="pr-9")#pr-35
-				.checklist__price 750 руб.
-			li 
-				label(for="pr-36") 1400 г
-				input(type="radio" name="pr-9")#pr-36
-				.checklist__price 820 руб.
+				ul.checklist
+					li 
+						label.custom-radio
+							.checklist__weight 800 г
+							input(type="radio" name="pr-9")
+							span 650 руб.
+					li 
+						label.custom-radio
+							.checklist__weight 1000 г
+							input(type="radio" name="pr-9")
+							span 700 руб.
+					li 
+						label.custom-radio
+							.checklist__weight 1200 г
+							input(type="radio" name="pr-9")
+							span 750 руб.
+					li 
+						label.custom-radio
+							.checklist__weight 1400 г
+							input(type="radio" name="pr-9")
+							span 820 руб.
+			.products__bottom
+				.switch-price
+					span.switch-minus -
+					input(type="text" value="1" disabled="disabled").quantity 
+					span.switch-plus +
 
-		.products__bottom
-			.switch-price
-				span.switch-minus -
-				input(type="text" value="1" disabled="disabled").quantity 
-				span.switch-plus +
-
-			button(type="button").products__order
-				img(src="img/cart.png" width="30" height="30")
-				span В корзину
+				button(type="button").products__order
+					img(src="img/cart.png" width="30" height="30")
+					span В корзину
 
 mixin productSlider
 	.product-gallery.swiper-container
@@ -310,7 +316,7 @@ mixin productSlider
 
 
 mixin productLising
-	li 
+	li.product-item 
 		.products__img 
 			img(src="img/pie-1.jpg")
 
@@ -349,7 +355,7 @@ mixin productLising
 			button(type="button").products__order
 				img(src="img/cart.png" width="30" height="30")
 				span В корзину
-	li 
+	li.product-item 
 		.products__img 
 			img(src="img/pie-1.jpg")
 
@@ -389,7 +395,7 @@ mixin productLising
 				img(src="img/cart.png" width="30" height="30")
 				span В корзину
 
-	li 
+	li.product-item  
 		.products__img 
 			img(src="img/pie-1.jpg")
 
@@ -429,7 +435,7 @@ mixin productLising
 				img(src="img/cart.png" width="30" height="30")
 				span В корзину
 
-	li 
+	li.product-item  
 		.products__img 
 			img(src="img/pie-1.jpg")
 
@@ -469,7 +475,7 @@ mixin productLising
 				img(src="img/cart.png" width="30" height="30")
 				span В корзину
 
-	li 
+	li.product-item 
 		.products__img 
 			img(src="img/pie-1.jpg")
 
@@ -509,7 +515,7 @@ mixin productLising
 				img(src="img/cart.png" width="30" height="30")
 				span В корзину
 
-	li 
+	li.product-item  
 		.products__img 
 			img(src="img/pie-1.jpg")
 
@@ -549,7 +555,7 @@ mixin productLising
 				img(src="img/cart.png" width="30" height="30")
 				span В корзину
 
-	li 
+	li.product-item  
 		.products__img 
 			img(src="img/pie-1.jpg")
 
@@ -589,7 +595,7 @@ mixin productLising
 				img(src="img/cart.png" width="30" height="30")
 				span В корзину
 
-	li 
+	li.product-item  
 		.products__img 
 			img(src="img/pie-1.jpg")
 

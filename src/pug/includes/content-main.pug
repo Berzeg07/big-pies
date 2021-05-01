@@ -126,8 +126,8 @@
 
         .swiper-pagination
 
-        .swiper-button-next
-        .swiper-button-prev
+        .swiper-button-next._mob-to-top
+        .swiper-button-prev._mob-to-top
 
 .advantageblock.container 
     h2.main-title Преимущества      
@@ -145,7 +145,7 @@
 
                     .adv-slider__bottom
                         .adv-slider__info
-                            b 30
+                            b 30 
                             span мин
 
                     .adv-slider__img 
@@ -161,7 +161,9 @@
                             img(src="img/kremlin.png" width="110" height="110")
 
                     .adv-slider__bottom
-                        .select._metro
+                        .select._slide
+                            .select__icon 
+                                img(src="img/metro-icon.png")
                             select 
                                 option Выберите метро
                                 option Тест
@@ -177,7 +179,7 @@
 
                     .adv-slider__bottom
                         .adv-slider__info
-                            b 25
+                            b 25 
                             span начинок
 
                     .adv-slider__img 
@@ -201,6 +203,8 @@
         .swiper-button-prev
 
 .priceblock.container
+    h2.main-title Цены
+
     table.pricetable
         thead 
             tr 
@@ -211,7 +215,7 @@
                 th 1400 г
                 th Быстрый онлайн заказ
         tbody
-            tr
+            tr._title
                 td 
                     .pricetable__head
                         .pricetable__img
@@ -314,7 +318,7 @@
                     .pricetable__btnitem 
                         button(type="button").pricetable__btn Добавить в корзину
 
-            tr
+            tr._title
                 td 
                     .pricetable__head
                         .pricetable__img
@@ -395,7 +399,7 @@
                     .pricetable__btnitem 
                         button(type="button").pricetable__btn Добавить в корзину
 
-            tr
+            tr._title
                 td 
                     .pricetable__head
                         .pricetable__img
@@ -476,143 +480,143 @@
                     .pricetable__btnitem 
                         button(type="button").pricetable__btn Добавить в корзину
 
-.loanblock.container 
-    h2.loanblock__title Онлайн заявка на осетинские пироги
+//- .loanblock.container 
+//-     h2.loanblock__title Онлайн заявка на осетинские пироги
 
-    .loanblock__choose Выберите начинку:
+//-     .loanblock__choose Выберите начинку:
 
-    ul.loanblock__list
-        +loanBlockList
+//-     ul.loanblock__list
+//-         +loanBlockList
 
-    .loanblock__img-left 
-        img(src="img/vg-l.png" width="383" height="301")
+//-     .loanblock__img-left 
+//-         img(src="img/vg-l.png" width="383" height="301")
 
-    .loanblock__img-right
-        img(src="img/vg-r.png" width="510" height="268")       
+//-     .loanblock__img-right
+//-         img(src="img/vg-r.png" width="510" height="268")       
 
-    form.formloan(action="#")
-        .formloan__top
-            input(type="text" placeholder="Имя").inp
-            input(type="text" placeholder="Телефон для связи").inp
+//-     form.formloan(action="#")
+//-         .formloan__top
+//-             input(type="text" placeholder="Имя").inp
+//-             input(type="text" placeholder="Телефон для связи").inp
 
-        input(type="text" placeholder="Сколько пирогов хотите заказать?").inp._height
-        textarea(placeholder="Комментарий").textarea
+//-         input(type="text" placeholder="Сколько пирогов хотите заказать?").inp._height
+//-         textarea(placeholder="Комментарий").textarea
 
-        button(type="submit").formbtn Отправить заявку
+//-         button(type="submit").formbtn Отправить заявку
 
-        .checkblock
-            input(type="checkbox")
-            label Я согласен на обработку персональных данных
+//-         .checkblock
+//-             input(type="checkbox")
+//-             label Я согласен на обработку персональных данных
 
-.urgentblock.container
-    h2.main-title Срочная доставка осетинских пирогов в Москве
+//- .urgentblock.container
+//-     h2.main-title Срочная доставка осетинских пирогов в Москве
 
-    .delivery-slider.swiper-container
-        .swiper-wrapper
-            .swiper-slide 
-                .delivery-slider__item
-                    .delivery-slider__img
-                        img(src="img/d-1.png")
+//-     .delivery-slider.swiper-container
+//-         .swiper-wrapper
+//-             .swiper-slide 
+//-                 .delivery-slider__item
+//-                     .delivery-slider__img
+//-                         img(src="img/d-1.png")
 
-                    .delivery-slider__title
-                        |Пироги  
-                        span на День рождения
+//-                     .delivery-slider__title
+//-                         |Пироги  
+//-                         span на День рождения
 
-                    ul.delivery-list
-                        li 
-                            a(href="#") «Фыдджин» - с мясом
-                        li 
-                            a(href="#") С капустой, яйцом и жареным луком
-                        li 
-                            a(href="#") С капустой и сыром
-                        li 
-                            a(href="#") С сыром осетинским (уалибах)
+//-                     ul.delivery-list
+//-                         li 
+//-                             a(href="#") «Фыдджин» - с мясом
+//-                         li 
+//-                             a(href="#") С капустой, яйцом и жареным луком
+//-                         li 
+//-                             a(href="#") С капустой и сыром
+//-                         li 
+//-                             a(href="#") С сыром осетинским (уалибах)
 
-            .swiper-slide 
-                .delivery-slider__item
-                    .delivery-slider__img
-                        img(src="img/d-2.png")
+//-             .swiper-slide 
+//-                 .delivery-slider__item
+//-                     .delivery-slider__img
+//-                         img(src="img/d-2.png")
 
-                    .delivery-slider__title
-                        |Пироги  
-                        span на свадьбу
+//-                     .delivery-slider__title
+//-                         |Пироги  
+//-                         span на свадьбу
 
-                    ul.delivery-list
-                        li 
-                            a(href="#") «Фыдджин» - с мясом
-                        li 
-                            a(href="#") С капустой, яйцом и жареным луком
-                        li 
-                            a(href="#") С капустой и сыром
-                        li 
-                            a(href="#") С сыром осетинским (уалибах)
+//-                     ul.delivery-list
+//-                         li 
+//-                             a(href="#") «Фыдджин» - с мясом
+//-                         li 
+//-                             a(href="#") С капустой, яйцом и жареным луком
+//-                         li 
+//-                             a(href="#") С капустой и сыром
+//-                         li 
+//-                             a(href="#") С сыром осетинским (уалибах)
 
-            .swiper-slide 
-                .delivery-slider__item
-                    .delivery-slider__img
-                        img(src="img/d-3.png")
+//-             .swiper-slide 
+//-                 .delivery-slider__item
+//-                     .delivery-slider__img
+//-                         img(src="img/d-3.png")
 
-                    .delivery-slider__title
-                        |Пироги  
-                        span на работу
+//-                     .delivery-slider__title
+//-                         |Пироги  
+//-                         span на работу
 
-                    ul.delivery-list
-                        li 
-                            a(href="#") «Фыдджин» - с мясом
-                        li 
-                            a(href="#") С капустой, яйцом и жареным луком
-                        li 
-                            a(href="#") С капустой и сыром
-                        li 
-                            a(href="#") С сыром осетинским (уалибах)
+//-                     ul.delivery-list
+//-                         li 
+//-                             a(href="#") «Фыдджин» - с мясом
+//-                         li 
+//-                             a(href="#") С капустой, яйцом и жареным луком
+//-                         li 
+//-                             a(href="#") С капустой и сыром
+//-                         li 
+//-                             a(href="#") С сыром осетинским (уалибах)
 
-            .swiper-slide 
-                .delivery-slider__item
-                    .delivery-slider__img
-                        img(src="img/d-4.png")
+//-             .swiper-slide 
+//-                 .delivery-slider__item
+//-                     .delivery-slider__img
+//-                         img(src="img/d-4.png")
 
-                    .delivery-slider__title
-                        |Пироги  
-                        span на праздниках
+//-                     .delivery-slider__title
+//-                         |Пироги  
+//-                         span на праздниках
 
-                    ul.delivery-list
-                        li 
-                            a(href="#") «Фыдджин» - с мясом
-                        li 
-                            a(href="#") С капустой, яйцом и жареным луком
-                        li 
-                            a(href="#") С капустой и сыром
-                        li 
-                            a(href="#") С сыром осетинским (уалибах)
+//-                     ul.delivery-list
+//-                         li 
+//-                             a(href="#") «Фыдджин» - с мясом
+//-                         li 
+//-                             a(href="#") С капустой, яйцом и жареным луком
+//-                         li 
+//-                             a(href="#") С капустой и сыром
+//-                         li 
+//-                             a(href="#") С сыром осетинским (уалибах)
 
-        .swiper-pagination
+//-         .swiper-pagination
 
-        .swiper-button-next
-        .swiper-button-prev
+//-         .swiper-button-next
+//-         .swiper-button-prev
 
-form(action="#").actionblock
-    .actionblock__column
-        .actionblock__title Акция! У вас день рождения? Дарим пирог в подарок!
+//- form(action="#").actionblock
+//-     .actionblock__column
+//-         .actionblock__title Акция! У вас день рождения? Дарим пирог в подарок!
 
-        ul.actionblock__list
-            li 
-                label(for="nameinp") Ваше имя
-                input(type="text" placeholder="Имя")#nameinp
-            li 
-                label(for="phoneinp") Ваш контактный телефон
-                input(type="text" placeholder="+7 (___) ___-__-__")#phoneinp
-            li 
-                label(for="cominp") Комментарий к заказу
-                textarea(placeholder="Напишите ваши пожелания к заказу").actionblock__textarea#cominp
+//-         ul.actionblock__list
+//-             li 
+//-                 label(for="nameinp") Ваше имя
+//-                 input(type="text" placeholder="Имя")#nameinp
+//-             li 
+//-                 label(for="phoneinp") Ваш контактный телефон
+//-                 input(type="text" placeholder="+7 (___) ___-__-__")#phoneinp
+//-             li 
+//-                 label(for="cominp") Комментарий к заказу
+//-                 textarea(placeholder="Напишите ваши пожелания к заказу").actionblock__textarea#cominp
 
-        button(type="submit").actionblock__btn Заказать пироги с бесплатной доставкой
+//-         button(type="submit").actionblock__btn Заказать пироги с бесплатной доставкой
 
-        .checkblock
-            input(type="checkbox")
-            label Я согласен на обработку персональных данных
+//-         .checkblock
+//-             input(type="checkbox")
+//-             label Я согласен на обработку персональных данных
 
-    .actionblock__column
-        img(src="img/pie-or.jpg")
+//-     .actionblock__column
+//-         img(src="img/pie-or.jpg")
 
 
 

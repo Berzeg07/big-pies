@@ -864,7 +864,7 @@
     flex-wrap: wrap;
 }
 
-.products>li {
+.product-item {
     max-width: 409px;
     width: 100%;
     background: #FFFFFF;
@@ -1005,7 +1005,7 @@
     background-color: #e9ecef;
 }
 
-@media (max-width: 1279px) {
+@media (max-width: 1899px) {
     .products {
         justify-content: space-around;
     }
@@ -1015,4 +1015,267 @@
     .products {
         justify-content: center;
     }
+}
+
+.contenttxt {
+    color: #7E7E7E;
+    padding: 0 14px;
+
+    p {
+        margin-bottom: 15px;
+
+    }
+}
+
+@media (max-width: 1279px) {
+
+    .swiper-button-next._mob-to-top,
+    .swiper-button-prev._mob-to-top {
+        top: 25%;
+    }
+
+    .swiper-button-next._mob-to-top {
+        right: 20px;
+    }
+
+    .swiper-button-prev._mob-to-top {
+        left: 20px;
+    }
+}
+
+.adv-slider__item {
+    position: relative;
+    background: #FFFFFF;
+    box-shadow: 10px 10px 50px 4px rgba(42, 56, 92, 0.16);
+    border-radius: 10px;
+    padding: 20px 23px;
+    // height: 224px;
+}
+
+.adv-slider__title {
+    padding-bottom: 13px;
+    margin-bottom: 13px;
+    border-bottom: 1px solid #C9C9C9;
+    font-size: 22px;
+}
+
+.adv-slider__article {
+    font-weight: 300;
+    margin-bottom: 27px;
+}
+
+.adv-slider__top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+    li {
+        &:first-child {
+            width: 230px;
+            padding-right: 15px;
+        }
+    }
+}
+
+.adv-slider__info {
+    color: #FF2054;
+
+    b {
+        font-family: 'GothamPro';
+        font-size: 40px;
+        font-weight: 700;
+        // margin-right: -15px;
+    }
+
+    span {
+        font-size: 20px;
+    }
+}
+
+.adv-slider__img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    img {
+        display: block;
+    }
+}
+
+.select._slide {
+    .selectric {
+        height: 46px;
+        background: #ECF1F7;
+    }
+}
+
+.advantageblock {
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+
+.adv-slider {
+    padding-bottom: 50px;
+}
+
+@media (max-width: 767px) {
+    .adv-slider {
+        .swiper-wrapper {
+            display: block;
+        }
+
+        .swiper-button-next,
+        .swiper-button-prev {
+            display: none;
+        }
+    }
+
+    .adv-slider__item {
+        margin-bottom: 25px;
+    }
+}
+
+.pricetable {
+    width: 100%;
+    // border-collapse: collapse;
+
+    thead {
+        background: #FFDD2D;
+        border-radius: 4px;
+
+        tr {
+            th {
+                height: 60px;
+                text-align: center;
+
+                &:first-child {
+                    text-align: left;
+                    padding-left: 20px;
+                }
+
+                @media (max-width: 1279px) {
+                    &:last-child {
+                        display: none;
+                    }
+                }
+
+                @media (max-width: 991px) {
+                    display: none;
+
+                    &:nth-child(1),
+                    &:nth-child(3) {
+                        display: table-cell;
+                    }
+                }
+            }
+        }
+    }
+
+    tbody {
+        tr {
+            background: #F5FCFF;
+
+            td {
+                text-align: center;
+                padding: 5px 0px;
+
+                &:first-child {
+                    padding-left: 20px;
+                    text-align: left;
+                }
+
+                @media (max-width: 1279px) {
+                    &:last-child {
+                        display: none;
+                    }
+                }
+
+                @media (max-width: 991px) {
+                    display: none;
+
+                    &:nth-child(1),
+                    &:nth-child(3) {
+                        display: table-cell;
+                    }
+                }
+            }
+
+            &:hover {
+                .pricetable__btn {
+                    opacity: 1;
+                }
+            }
+        }
+
+        tr._title {
+            background: white;
+        }
+    }
+
+    .custom-radio {
+        display: flex;
+        justify-content: center;
+
+        @media (max-width: 991px) {
+            width: 110px;
+            margin: 0 auto;
+        }
+
+        span {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 500;
+            font-size: 18px;
+
+            &:before {
+                margin-right: 12px;
+
+                @media (max-width: 1279px) {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+.pricetable__head {
+    display: flex;
+    align-items: center;
+    padding: 12px 0px;
+}
+
+.pricetable__title {
+    padding-left: 14px;
+    font-weight: 500;
+    font-size: 24px;
+
+    @media (max-width: 991px) {
+        font-size: 16px;
+    }
+}
+
+.pricetable__link {
+    color: #757575;
+    text-decoration: underline;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.pricetable__btn {
+    background: #39B60D;
+    border-radius: 6px;
+    font-weight: 500;
+    font-size: 18px;
+    max-width: 336px;
+    width: 100%;
+    color: white;
+    height: 60px;
+    opacity: 0;
+}
+
+.pricetable__btnitem {
+    background: url("../img/check-table.png") no-repeat center;
 }

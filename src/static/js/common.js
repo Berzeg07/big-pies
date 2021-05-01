@@ -69,6 +69,75 @@ $(document).ready(function () {
             el: '.swiper-pagination',
             clickable: true,
         },
+
+    });
+
+    var pieSlider = new Swiper('.pie-slider', {
+        slidesPerView: 4,
+        spaceBetween: 0,
+        loop: true,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        breakpoints: {
+            767: {
+                slidesPerView: 1,
+            },
+            1279: {
+                slidesPerView: 2,
+            },
+            1599: {
+                slidesPerView: 3,
+            },
+        }
+    })
+
+    var myAdvSlider = undefined;
+
+    function initSwiper() {
+        var screenWidth = $(window).width();
+        if (screenWidth > 767 && myAdvSlider == undefined) {
+            var advSlider = new Swiper('.adv-slider', {
+                slidesPerView: 4,
+                spaceBetween: 23,
+                loop: true,
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                breakpoints: {
+                    767: {
+                        slidesPerView: 1,
+                    },
+                    1279: {
+                        slidesPerView: 2,
+                    },
+                    1599: {
+                        slidesPerView: 3,
+                    },
+                }
+            })
+        } else if (screenWidth < 768 && myAdvSlider != undefined) {
+            myAdvSlider.destroy();
+            myAdvSlider = undefined;
+        }
+    }
+
+    //Swiper plugin initialization
+    initSwiper();
+
+    //Swiper plugin initialization on window resize
+    $(window).on('resize', function () {
+        initSwiper();
     });
 
     $(".switch-price span").on("click", function () {
