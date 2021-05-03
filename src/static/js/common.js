@@ -203,5 +203,30 @@ $(document).ready(function () {
         initSwiperD();
     });
 
+    if (window.matchMedia('(max-width: 991px)').matches) {
+        $('#productSlider').lightSlider({
+            gallery: false,
+            item: 1,
+            vertical: false,
+            // adaptiveHeight: true,
+            // verticalHeight: 196,
+            slideMargin: 5
+        });
+    }
+    if (window.matchMedia('(min-width: 992px)').matches) {
+        $('#productSlider').lightSlider({
+            gallery: true,
+            item: 1,
+            vertical: true,
+            adaptiveHeight: true,
+            loop: true,
+            verticalHeight: 356,
+            vThumbWidth: 129,
+            thumbItem: 4,
+            thumbMargin: 4,
+            slideMargin: 0
+        });
+    }
+
 
 });

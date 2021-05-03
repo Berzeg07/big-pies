@@ -1,2 +1,60 @@
-p 1111111111111111111111111111222222222222222222222
-+icon('hands','newclass')
+.topcolumn.container 
+    .topcolumn__left
+        .product-card-slider
+            ul#productSlider
+                li(data-thumb="img/photorama.jpg")
+                    img(src="img/photorama.jpg")
+                li(data-thumb="img/photorama.jpg")
+                    img(src="img/photorama.jpg")
+                li(data-thumb="img/photorama.jpg")
+                    img(src="img/photorama.jpg")
+                li(data-thumb="img/photorama.jpg")
+                    img(src="img/photorama.jpg")
+                li(data-thumb="img/photorama.jpg")
+                    img(src="img/photorama.jpg")
+                li(data-thumb="img/photorama.jpg")
+                    img(src="img/photorama.jpg")
+
+    .topcolumn__right
+
+.sliderblock.container
+    h2.main-title Осетинские пироги с капустой
+
+    .pie-slider.swiper-container
+        .swiper-wrapper
+            +pieSlides
+            +pieSlides
+            +pieSlides
+            +pieSlides
+
+        .swiper-pagination
+
+        .swiper-button-next._mob-to-top
+        .swiper-button-prev._mob-to-top
+
+form(action="#").actionblock
+    .actionblock__content
+        .actionblock__column
+            .actionblock__title Акция! У вас день рождения? Дарим пирог в подарок!
+
+            ul.actionblock__list
+                li 
+                    label(for="nameinp") Ваше имя
+                    input(type="text" placeholder="Имя").inp#nameinp
+                li 
+                    label(for="phoneinp") Ваш контактный телефон
+                    input(type="text" placeholder="+7 (___) ___-__-__").inp#phoneinp
+                li 
+                    label(for="cominp") Комментарий к заказу
+                    textarea(placeholder="Напишите ваши пожелания к заказу").textarea.actionblock__textarea#cominp
+
+            button(type="submit").actionblock__btn 
+                |Заказать пироги 
+                span с бесплатной доставкой
+
+            .checkblock._grey
+                input(type="checkbox").check-btn#check2
+                label(for="check2") С условиями конфендициальности ознакомлен
+
+        .actionblock__column
+            img(src="img/pie-or.jpg")
