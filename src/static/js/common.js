@@ -156,5 +156,52 @@ $(document).ready(function () {
         $button.parent().find("input").val(newVal);
     });
 
+    var delivSlider = undefined;
+
+    function initSwiperD() {
+        var screenWidth = $(window).width();
+        if (screenWidth > 767 && delivSlider == undefined) {
+            var advSlider = new Swiper('.delivery-slider', {
+                slidesPerView: 4,
+                spaceBetween: 38,
+                loop: true,
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+
+                breakpoints: {
+                    767: {
+                        slidesPerView: 1,
+                    },
+                    992: {
+                        slidesPerView: 2,
+                    },
+                    1279: {
+                        slidesPerView: 3,
+                    },
+                    1599: {
+                        slidesPerView: 3,
+                    },
+                }
+            });
+        } else if (screenWidth < 768 && delivSlider != undefined) {
+            delivSlider.destroy();
+            delivSlider = undefined;
+        }
+    }
+
+    //Swiper plugin initialization
+    initSwiperD();
+
+    //Swiper plugin initialization on window resize
+    $(window).on('resize', function () {
+        initSwiperD();
+    });
+
 
 });
