@@ -1,0 +1,107 @@
+.breadcrumbs-wrap 
+    .container
+        .breadcrumbs
+            a(href="#") Главная
+            a Корзина
+
+.basketblock.container
+    h2.main-title Корзина
+
+    table.carttable 
+        thead 
+            tr 
+                th 
+                    span.mob-show Наименование пирога
+                    span.mob-hidden Фото и наименование пирога
+                th Вес пирога (г)
+                th Цена
+                th Кол-во (шт)
+                th Сумма
+        tbody
+            tr 
+                td
+                    .carttable__list
+                        img(src="img/cart-icon.jpg" width="50" height="50")
+                        .carttable__article Пирог с рубленой говядиной, грибами и сыром
+                    .carttable__mob._close
+                td 
+                    .carttable__mob Вес пирога (г)
+                    |1200
+                td
+                    .carttable__mob Цена
+                    |780 руб.
+                td 
+                    .carttable__mob Кол-во (шт)
+                    .switch-price._table
+                        span.switch-minus -
+                        input(type="text" value="1" disabled="disabled").quantity 
+                        span.switch-plus +
+                td 
+                    .carttable__mob Сумма
+                    .carttable__item
+                        .carttable__price 2 780 руб.
+                        .carttable__delete 
+                            img(src="img/close.png" width="24" height="24")
+            tr 
+                td
+                    .carttable__list
+                        img(src="img/cart-icon.jpg" width="50" height="50")
+                        .carttable__article Пирог с рубленой говядиной, грибами и сыром
+                    .carttable__mob._close
+                td 
+                    .carttable__mob Вес пирога (г)
+                    |1200
+                td
+                    .carttable__mob Цена
+                    |780 руб.
+                td 
+                    .carttable__mob Кол-во (шт)
+                    .switch-price._table
+                        span.switch-minus -
+                        input(type="text" value="1" disabled="disabled").quantity 
+                        span.switch-plus +
+                td 
+                    .carttable__mob Сумма
+                    .carttable__item
+                        .carttable__price 2 780 руб.
+                        .carttable__delete 
+                            img(src="img/close.png" width="24" height="24")
+
+    .totalprice 
+        b Итого: 
+        | пирогов 12 шт. <br>
+        span Общая сумма заказа:<br> 12 450 руб.
+
+    .contactdata
+        .contactdata__top
+            .contactdata__title Контактные данные
+
+        form.contactform(action="#")
+            .contactform__top
+                input(type="text" placeholder="Ваше имя").inp._man
+                input(type="text" placeholder="Телефон").inp._phone
+                input(type="text" placeholder="Введите адрес доставки").inp._adress
+
+            .contactform__bottom
+                textarea.contactform__comment(placeholder="Комментарий")
+
+            ul.contactform__list
+                li
+                    label.custom-radio._disc
+                        input(type="radio" name="cs-1")
+                        span Курьеру наличными
+                li
+                    label.custom-radio._disc
+                        input(type="radio" name="cs-1")
+                        span Оплата по карте
+                li
+                    label.custom-radio._disc
+                        input(type="radio" name="cs-1")
+                        span Онлайн оплата на сайте
+
+            button(type="submit").contactform__btn 
+                span Отправить заявку 
+                b Заказать пироги с бесплатной доставкой
+            .checkblock._form
+                input(type="checkbox").check-btn#check2
+                label(for="check2") С условиями конфендициальности ознакомлен
