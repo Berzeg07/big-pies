@@ -1929,7 +1929,231 @@
         text-align: center;
     }
 
-    .lSPager {
+    .lSSlideOuter .lSPager.lSpg>li a {
+        width: 12px;
+        height: 12px;
+        background: #E6E6E6;
+    }
+
+    .lSSlideOuter .lSPager.lSpg>li.active a {
+        background: #FFDD2D;
+    }
+}
+
+.breadcrumbs-wrap {
+    border-bottom: 1px solid rgba(62, 85, 148, 0.2);
+    margin-bottom: 50px;
+}
+
+.breadcrumbs {
+    min-width: 100%;
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    -webkit-overflow-scrolling: touch;
+
+    &::-webkit-scrollbar {
         display: none;
+    }
+
+    a {
+        position: relative;
+        flex: 0 0 auto;
+        display: inline-block;
+        padding: 16px 0px 5px;
+        margin-bottom: 11px;
+
+        &:not(:last-child) {
+            border-bottom: 1px solid rgba(95, 96, 97, 0.47);
+
+            &:after {
+                content: "";
+                position: absolute;
+                top: 66%;
+                right: -19px;
+                transform: translateY(-50%);
+                width: 8px;
+                height: 8px;
+                background: url("../img/angle.png") no-repeat center;
+            }
+
+            margin-right: 34px;
+        }
+    }
+}
+
+.topcolumn {
+    display: flex;
+}
+
+.topcolumn__right {
+    width: calc(100% - 696px);
+    padding-left: 45px;
+}
+
+.main-title._single {
+    max-width: 460px;
+    width: 100%;
+    position: relative;
+    text-align: left;
+    margin-bottom: 18px;
+}
+
+.singlebottom {
+    display: flex;
+    align-items: center;
+
+    .checklist__weight {
+        text-align: center;
+    }
+}
+
+.productstatus {
+    position: absolute;
+    right: -90px;
+    top: 0;
+    background: #55BB00;
+    border-radius: 4px 4px 4px 0px;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+
+    span {
+        position: relative;
+        padding: 7px 10px;
+        display: inline-block;
+
+        &:after {
+            content: "";
+            position: absolute;
+            bottom: -16px;
+            left: 0;
+            width: 21px;
+            height: 16px;
+            background: url("../img/tip.png") no-repeat center;
+        }
+    }
+}
+
+.single__title {
+    font-family: 'GothamPro';
+    font-weight: 500;
+    margin-bottom: 11px;
+}
+
+.filling__list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    li {
+        margin-right: 8px;
+        margin-bottom: 19px;
+
+        span {
+            padding: 7px 13px;
+            display: inline-block;
+            border-radius: 32px;
+        }
+    }
+}
+
+.color-red {
+    border: 1px solid #FC5900;
+    color: #FC5900;
+}
+
+.color-orange {
+    border: 1px solid #8BC34A;
+    color: #8BC34A;
+}
+
+.color-green {
+    border: 1px solid #479838;
+    color: #479838;
+}
+
+.single__article {
+    max-width: 558px;
+    width: 100%;
+    color: #7E7E7E;
+    margin-bottom: 25px;
+}
+
+.singlebottom__item._left {
+    max-width: 349px;
+    width: 100%;
+    margin-bottom: 25px;
+    margin-right: 45px;
+}
+
+.singlebottom__item._right {
+    display: flex;
+    max-width: 410px;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 0px 0px 20px 20px;
+    margin-bottom: 25px;
+}
+
+.single-info {
+    margin-bottom: 25px;
+}
+
+@media (max-width: 1599px) {
+    .singlebottom {
+        display: block;
+    }
+
+    .main-title._single {
+        max-width: 400px;
+        width: 100%;
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 1279px) {
+    .product-card-slider {
+        margin: 0 auto;
+    }
+
+    .main-title._single {
+        font-size: 20px;
+    }
+
+    .topcolumn__left {
+        margin-bottom: 18px;
+    }
+
+    .topcolumn__right {
+        max-width: 400px;
+        width: 100%;
+        padding-left: 0;
+        margin: 0 auto;
+    }
+
+    .topcolumn {
+        display: block;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .breadcrumbs {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .main-title._single {
+        text-align: center;
+    }
+
+    .productstatus {
+        display: none;
+    }
+
+    .breadcrumbs-wrap {
+        margin-bottom: 25px;
+        padding-right: 15px;
     }
 }

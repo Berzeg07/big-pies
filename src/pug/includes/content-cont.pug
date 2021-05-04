@@ -1,3 +1,10 @@
+.breadcrumbs-wrap 
+    .container
+        .breadcrumbs
+            a(href="#") Главная
+            a(href="#") Постные пироги
+            a Осетинский пирог с капустой, яйцом и зеленью
+
 .topcolumn.container 
     .topcolumn__left
         .product-card-slider
@@ -16,9 +23,68 @@
                     img(src="img/photorama.jpg")
 
     .topcolumn__right
+        h1.main-title._single 
+            |Осетинский пирог с капустой, яйцом и зеленью
+            .productstatus 
+                span В наличии
+
+        .filling
+            .single__title Начинка пирога:
+            ul.filling__list
+                li 
+                    span.color-red яйцо
+                li 
+                    span.color-orange капуста
+                li 
+                    span.color-green зелень
+
+        .single__title Состав:
+        .single__article Мука высший сорт, капуста, яйца, зелень, перец черный молотый, масло растительное, масло топленое, дрожжи, соль.
+
+        .singlebottom
+            .singlebottom__item._left
+                ul.checklist
+                    li 
+                        label.custom-radio
+                            .checklist__weight 800 г
+                            input(type="radio" name="pr-8")
+                            span 650 руб.
+                    li 
+                        label.custom-radio
+                            .checklist__weight 1000 г
+                            input(type="radio" name="pr-8")
+                            span 700 руб.
+                    li 
+                        label.custom-radio
+                            .checklist__weight 1200 г
+                            input(type="radio" name="pr-8")
+                            span 750 руб.
+                    li 
+                        label.custom-radio
+                            .checklist__weight 1400 г
+                            input(type="radio" name="pr-8")
+                            span 820 руб.
+
+            .singlebottom__item._right
+                .switch-price
+                    span.switch-minus -
+                    input(type="text" value="1" disabled="disabled").quantity 
+                    span.switch-plus +
+
+                button(type="button").products__order
+                    img(src="img/cart.png" width="30" height="30")
+                    span В корзину
+.single-info.container
+    h2.main-title Осетинские пироги в москве с доставкой точно ко времени
+
+    .contenttxt
+        p Давно хотели отведать лучшие осетинские пироги в Москве? Мы предлагаем вам их недорого с бесплатной доставкой по городу. Чтобы заказать вкусные большие осетинские пироги, звоните нам!
+        p Осетинские пироги — это не только вкусное, но и символичное для осетинского народа блюдо, имеющее историю длиной во много веков. Домашняя выпечка с щедрой начинкой символизировала в Северной Осетии изобилие, материальное благополучие семьи и здоровье каждого ее члена. Традиционно на стол хозяйка выкладывала три пирога, один символизировал небо, второй — землю, а третий — подземное царство. В некоторых источниках осетинский пирог называют прообразом любимого блюда итальянцев – пиццы.
+        p О старинных поверьях и традициях сегодня мало кто помнит, но вкусные большие пироги по старинным рецептам выпекаются по-прежнему. Они популярны благодаря красивой форме, насыщенному содержанию и универсальности — в будний день или праздник, на завтрак или ужин — они всегда кстати.
+        p Вариаций начинок большое множество, а это значит, что вы гарантированно сможете подобрать пирог по вкусу — с рыбой или мясом, с зеленью или капустой, с картофелем или тыквой. Неизменным в пироге остается вкуснейшее тесто. Для приготовления пирогов мы используем высококачественные продукты, свежие и экологически чистые. Заказы на выпечку принимаются ежедневно с 9 до 21 часа. При заказе от двух больших пирогов доставка по Москве бесплатная
 
 .sliderblock.container
-    h2.main-title Осетинские пироги с капустой
+    h2.main-title Популярные осетинские пироги
 
     .pie-slider.swiper-container
         .swiper-wrapper
